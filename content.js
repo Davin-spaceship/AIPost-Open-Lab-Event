@@ -18,7 +18,11 @@ window.OPENLAB = {
     {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',title:'當程式碼，變成樂器。',description:'我們正邀請音樂創作者與 Live Coder，探索即時生成的聲音與視覺。演出安排將陸續公布。',symbol:'≋'},
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',title:'吃點東西，繼續聊。',description:'專屬名牌把 AI 興趣變成開場白。17:30 起搭配餐食、酒水與非酒精飲品，讓交流繼續。',symbol:'↔'}
   ],
-  partners:[{name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'',url:'',published:true}],
+  partners:[
+    {name:'xAgent ID',category:'brand',role:'參與夥伴',description:'',logo:'',url:'https://xagent.id/',published:true},
+    {name:'Red Bull',category:'brand',role:'參與夥伴',description:'',logo:'',url:'',published:true},
+    {name:'SOKER',category:'brand',role:'參與夥伴',description:'',logo:'',url:'https://www.soker.com.tw/',published:true},
+    {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'',url:'',published:true}],
   speakers:[],
   challenges:[
     {id:'useless',name:'Useless AI Challenge',title:'沒什麼用。\n但很想玩。',description:'做一個現在看似沒用，卻讓人忍不住想分享的 AI。我們想看的是腦洞、巧思，還有「你到底怎麼想到的？」',examples:['把 PDF 變成宮鬥劇','會假裝自己很忙的 AI','隨台股漲跌變語氣的電子寵物'],note:'示例是創作靈感，不是指定題目。',status:'競賽辦法即將公布',rulesUrl:'',open:false},
