@@ -8,7 +8,7 @@
     const n=el('a','update');n.href=a.href;n.dataset.label=a.label;n.append(el('span','mono',a.label));const copy=el('div');copy.append(el('h3','',a.title),el('p','',a.description));n.append(copy,el('span','update-arrow','↗'));$('#updates-list').append(n);
   });
   data.programs.forEach(p=>{
-    const n=el('article','program-card');n.dataset.category=p.category;const top=el('div','card-top');top.append(el('span','',p.number),el('span','',p.tag));const symbol=el('span','card-symbol',p.symbol);symbol.setAttribute('aria-hidden','true');n.append(top,symbol,el('h3','',p.name),el('p','program-title',p.title),el('p','',p.description));$('#program-grid').append(n);
+    const n=el('article','program-card');n.dataset.category=p.category;const top=el('div','card-top');top.append(el('span','',p.number),el('span','',p.tag));const symbol=el('span','card-symbol',p.symbol);symbol.setAttribute('aria-hidden','true');n.append(top,symbol,el('h3','',p.name),el('p','program-title',p.title),el('p','',p.description));if(p.href){const more=el('a','text-link','看看體驗內容 ↓');more.href=p.href;n.append(more);}$('#program-grid').append(n);
   });
   document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
     document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
