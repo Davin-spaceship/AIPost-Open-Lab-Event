@@ -19,9 +19,9 @@ window.OPENLAB = {
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',title:'吃點東西，繼續聊。',description:'專屬名牌把 AI 興趣變成開場白。17:30 起搭配餐食、酒水與非酒精飲品，讓交流繼續。',symbol:'↔'}
   ],
   partners:[
-    {name:'xAgent ID',category:'brand',role:'參與夥伴',description:'',logo:'',url:'https://xagent.id/',published:true},
-    {name:'Red Bull',category:'brand',role:'參與夥伴',description:'',logo:'',url:'',published:true},
-    {name:'SOKER',category:'brand',role:'參與夥伴',description:'',logo:'',url:'https://www.soker.com.tw/',published:true},
+    {name:'xAgent ID',category:'brand',role:'',description:'',logo:'',url:'https://xagent.id/',published:true},
+    {name:'Red Bull',category:'brand',role:'',description:'',logo:'',url:'',published:true},
+    {name:'SOKER',category:'brand',role:'',description:'',logo:'',url:'https://www.soker.com.tw/',published:true},
     {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'',url:'',published:true}],
   speakers:[],
   challenges:[

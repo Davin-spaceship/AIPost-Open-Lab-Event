@@ -20,7 +20,7 @@
   });
   function renderPartners(filter='all') {
     const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published&&(filter==='all'||p.category===filter));
-    items.forEach(p=>{const url=validUrl(p.url);const n=el(url?'a':'article','partner-card');if(url){n.href=url;n.target='_blank';n.rel='noopener';}if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));n.append(el('p','partner-role',p.role));if(p.description)n.append(el('p','',p.description));if(url){n.append(el('span','partner-website','品牌官網 ↗'));n.setAttribute('aria-label',p.name+' 品牌官網（另開分頁）');}grid.append(n);});
+    items.forEach(p=>{const url=validUrl(p.url);const n=el(url?'a':'article','partner-card');if(url){n.href=url;n.target='_blank';n.rel='noopener';n.setAttribute('aria-label',p.name+' 官網（另開分頁）');}if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));grid.append(n);});
     const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續解鎖。'),el('span','mono',filter==='community'?'COMMUNITY / COMING SOON':filter==='media'?'MEDIA / COMING SOON':'NEXT UP / COMING SOON'));grid.append(pending);
   }
   renderPartners();document.querySelectorAll('[data-partner-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-partner-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});renderPartners(button.dataset.partnerFilter);}));
