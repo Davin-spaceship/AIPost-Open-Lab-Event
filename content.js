@@ -3,10 +3,10 @@
  * 不放洽談中的品牌，也不以歷來合作代表本次合作。
  */
 window.OPENLAB = {
-  event: {name:'AI郵報 OPEN LAB 2026',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
+  event: {name:'AI郵報 OPEN LAB 2026',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
   announcements:[
     {label:'AI PLAYGROUND',title:'輪盤抽任務，親手完成一個 AI 作品',description:'五類主題桌、志工引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'#playground'},
-    {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500，一般票 NT$800；活動內容相同。',href:'#tickets'},
+    {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},
     {label:'FIRST LOOK',title:'2026 AI郵報讀者調查，現場大公開',description:'從大家怎麼用 AI，到期待與焦慮。讓讀者的真實聲音成為對話的起點。',href:'#survey'},
     {label:'CHALLENGE',title:'兩個創作挑戰，準備解鎖',description:'Useless AI Challenge × Postcards from 2036。徵件方式、獎項與時程將陸續公布。',href:'#challenges'}
   ],
@@ -33,7 +33,7 @@ window.OPENLAB = {
     {question:'沒有技術背景，也可以參加嗎？',answer:'當然可以。活動歡迎對 AI 感到好奇的人。你可以聽分享、看 Demo、體驗產品，或來認識新朋友；創作挑戰的參與條件將另行公告。'},
     {question:'一個人來，會不會尷尬？',answer:'每位參加者都有專屬名牌，寫上名字、關注的 AI 主題與交流意向。從一句「你也在玩這個？」開始，就有機會認識新的夥伴。'},
     {question:'要帶電腦嗎？需要每一場都參加嗎？',answer:'AI Playground 預計提供 8–12 台筆電／桌機，依時段與名額安排體驗；若想自由創作，也可以帶自己的電腦。設備與預約方式以最終公告為準。你可以自由切換分享與體驗區，不需要從頭坐到尾。'},
-    {question:'票券包含哪些內容？',answer:'早鳥與一般票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、專屬名牌、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
+    {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、專屬名牌、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
     {question:'競賽需要另外報名嗎？',answer:'各挑戰的徵件方式、資格、名額、獎項與時程將陸續公布。購買活動票不代表自動取得競賽參賽資格；請依正式競賽公告辦理。'},
     {question:'可以退票或轉讓嗎？',answer:'請依 Luma 報名頁最新票務政策辦理。報名、退票與轉讓問題可聯繫 info@aiposthub.com。'},
     {question:'場地入口和完整節目在哪裡看？',answer:'活動館別、報到入口、交通資訊與完整節目將在本頁和 Luma 陸續更新，並通知報名者。'}

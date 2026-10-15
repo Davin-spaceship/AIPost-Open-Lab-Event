@@ -29,9 +29,26 @@
   speakers.forEach(s=>{const n=el('article','speaker-card');if(s.photo){const img=el('img');img.src=s.photo;img.alt=s.name;img.loading='lazy';n.append(img);}n.append(el('h4','',s.name),el('p','',s.role),el('p','',s.topic));$('#speaker-grid').append(n);});
   data.schedule.forEach(s=>{const n=el('article');const time=el('time','',s.time);time.dateTime=s.time;const copy=el('div');copy.append(el('h3','',s.title),el('p','',s.description));n.append(time,copy);$('#schedule').append(n);});
   data.faq.forEach(f=>{const n=el('details');n.append(el('summary','',f.question),el('p','',f.answer));$('#faq-list').append(n);});
-  function updateTickets(){const early=Date.now()<Date.parse(data.event.earlyDeadline);const price=early?data.event.earlyPrice:data.event.regularPrice;$('#ticket-price').textContent=price;$('#mobile-price').textContent=`${early?'早鳥':'一般票'} NT$${price}`;$('.ticket-phase').textContent=early?'EARLY BIRD / 早鳥票':'GENERAL ADMISSION / 一般票';$('#price-next').textContent=early?`一般票 NT$${data.event.regularPrice} · 早鳥至 ${data.event.earlyLabel}`:'早鳥期間已結束 · 請以 Luma 即時供應為準';$('.early-note').textContent=early?`早鳥至 ${data.event.earlyLabel} · 一票參與整場`:'一票參與整場 · 請以 Luma 即時票券供應為準';document.querySelectorAll('.ticket-link').forEach(a=>{a.href=data.event.registration;if(a.closest('.hero-actions'))a.innerHTML=`NT$${price} · 先把位置留好 <span>↗</span>`;else if(!a.closest('.mobile-booking'))a.innerHTML=`${early?'取得早鳥票':'前往報名'} <span>↗</span>`;});}
+  function ticketPhase(now=Date.now()){
+    if(now<Date.parse(data.event.earlyDeadline))return {name:'早鳥票',short:'早鳥',label:'EARLY BIRD / 早鳥票',price:data.event.earlyPrice};
+    if(now<Date.parse(data.event.lateStart))return {name:'一般票',short:'一般票',label:'GENERAL ADMISSION / 一般票',price:data.event.regularPrice};
+    return {name:'晚鳥票',short:'晚鳥票',label:'LATE ADMISSION / 晚鳥票',price:data.event.latePrice};
+  }
+  function updateTickets(){
+    const phase=ticketPhase();
+    $('#ticket-price').textContent=phase.price.toLocaleString('en-US');
+    $('#mobile-price').textContent=`${phase.short} NT$${phase.price.toLocaleString('en-US')}`;
+    $('.ticket-phase').textContent=phase.label;
+    $('#price-next').textContent='早鳥 NT$500 ／ 一般票 NT$800 ／ 晚鳥票 NT$1,000';
+    $('.early-note').textContent=phase.price===data.event.earlyPrice?`早鳥至 ${data.event.earlyLabel} · 一票參與整場`:'一票參與整場 · 票券供應依 Luma 即時資訊為準';
+    document.querySelectorAll('.ticket-link').forEach(a=>{
+      a.href=data.event.registration;
+      if(a.closest('.hero-actions'))a.innerHTML=`NT$${phase.price.toLocaleString('en-US')} · 先把位置留好 <span>↗</span>`;
+      else if(!a.closest('.mobile-booking'))a.innerHTML=`${phase.price===data.event.earlyPrice?'取得早鳥票':'前往報名'} <span>↗</span>`;
+    });
+  }
   const invite=$('.partner-invite p');invite.textContent=invite.textContent.replace('带','帶');
-  const syncAnnouncement=()=>{if(Date.now()>=Date.parse(data.event.earlyDeadline)){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent='一般票開放中，12/5 現場見';n.querySelector('p').textContent=`一般票 NT$${data.event.regularPrice}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
+  const syncAnnouncement=()=>{const phase=ticketPhase();if(phase.price!==data.event.earlyPrice){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent=phase.name+'開放中，12/5 現場見';n.querySelector('p').textContent=`${phase.name} NT$${phase.price.toLocaleString('en-US')}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
   updateTickets();syncAnnouncement();setInterval(()=>{updateTickets();syncAnnouncement();},60000);
   if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:.08});document.querySelectorAll('.heading-row,.program-grid,.challenge-grid,.survey-main,.partner-grid,.info-grid,.tickets-grid').forEach(n=>{n.classList.add('reveal-ready');observer.observe(n);});}
 })();
