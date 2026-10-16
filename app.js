@@ -50,5 +50,28 @@
   const invite=$('.partner-invite p');invite.textContent=invite.textContent.replace('带','帶');
   const syncAnnouncement=()=>{const phase=ticketPhase();if(phase.price!==data.event.earlyPrice){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent=phase.name+'開放中，12/5 現場見';n.querySelector('p').textContent=`${phase.name} NT$${phase.price.toLocaleString('en-US')}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
   updateTickets();syncAnnouncement();setInterval(()=>{updateTickets();syncAnnouncement();},60000);
+  const requestForm=$('#partnership-form');
+  requestForm.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(!requestForm.reportValidity())return;
+    const submit=requestForm.querySelector('button[type="submit"]'),status=$('#request-status');
+    if(submit.disabled)return;
+    if(requestForm.elements._honey.value)return;
+    submit.disabled=true;status.dataset.error='false';status.textContent='傳送中，請稍候…';
+    const payload=Object.fromEntries(new FormData(requestForm));
+    payload._replyto=payload.email;
+    const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),20000);
+    try{
+      const response=await fetch('https://formsubmit.co/ajax/davin@aiposthub.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+      const result=await response.json();
+      if(/activat|confirm/i.test(result.message||'')){
+        status.dataset.error='true';status.textContent='收件服務尚待主辦方啟用，你的資料已交由服務暫存。請稍後再試，或直接聯繫 davin@aiposthub.com。';
+      }else{
+        if(!response.ok || (result.success!==true && result.success!=='true'))throw new Error('submission_failed');
+        status.textContent='合作需求已送出，我們會透過你留下的 Email 與你聯繫。';requestForm.reset();
+      }
+    }catch(error){status.dataset.error='true';status.textContent=error.name==='AbortError'?'連線逾時，尚無法確認送出結果。請稍後再試，或聯繫 davin@aiposthub.com。':'目前無法送出，請稍後再試，或聯繫 davin@aiposthub.com。';}
+    finally{clearTimeout(timer);submit.disabled=false;}
+  });
   if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:.08});document.querySelectorAll('.heading-row,.program-grid,.challenge-grid,.survey-main,.partner-grid,.info-grid,.tickets-grid').forEach(n=>{n.classList.add('reveal-ready');observer.observe(n);});}
 })();
