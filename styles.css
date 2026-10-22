@@ -44,7 +44,7 @@
 .people .heading-row h2{font-size:clamp(24px,2.5vw,34px);font-weight:700;line-height:1.5;letter-spacing:-.025em;text-wrap:balance}
 
 /* Compact partner logos, balanced by each brand's proportions. */
-#partner-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:20px 0;border-bottom:0}
+#partner-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding:20px 0;border-bottom:0}
 #partner-grid .partner-card{min-width:0;min-height:82px;padding:16px 12px}
 #partner-grid .partner-card img{width:112px;height:36px;max-width:100%;object-fit:contain}
 #partner-grid img[alt="Red Bull"]{width:80px;height:44px}

@@ -21,7 +21,7 @@ window.OPENLAB = {
   partners:[
     {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia.svg',url:'',published:true},
     {name:'GIGABYTE',category:'brand',role:'AI Playground 設備支持',description:'',logo:'logos/gigabyte.png',url:'',published:true},
-    {name:'xAgent ID',category:'brand',role:'',description:'',logo:'logos/xagent.svg',url:'https://xagent.id/',published:true},
+    {name:'xAgent ID',category:'brand',role:'',description:'',logo:'logos/xagent.svg',url:'https://xagent.id/',published:false},
     {name:'Red Bull',category:'brand',role:'',description:'',logo:'logos/red-bull.svg',url:'',published:true},
     {name:'SOKER',category:'brand',role:'',description:'',logo:'logos/soker.png',url:'https://www.soker.com.tw/',published:true},
     {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'logos/mixroute.svg',url:'https://mixroute.ai/',published:true}],
