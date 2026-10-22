@@ -38,3 +38,7 @@
 .night-support{margin:26px 0}
 .night-support>.mono{font-size:11px;letter-spacing:.08em}
 .night-support .section-support{margin-bottom:0}
+
+/* Keep the partners heading quieter than the main program sections. */
+.people .heading-row{align-items:center;gap:24px;margin-bottom:28px}
+.people .heading-row h2{font-size:clamp(24px,2.5vw,34px);font-weight:700;line-height:1.5;letter-spacing:-.025em;text-wrap:balance}
