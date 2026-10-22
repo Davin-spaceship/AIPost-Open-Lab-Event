@@ -18,12 +18,12 @@
     const n=el('article','challenge-card');n.append(el('span','mono',c.name),el('span','challenge-icon',c.id==='useless'?'?':'↗'),el('h3','',c.title),el('p','',c.description));const list=el('ul');c.examples.forEach(x=>list.append(el('li','',x)));n.append(list,el('p','fine-print',c.note));
     const url=validUrl(c.rulesUrl);const state=el(c.open&&url?'a':'div','challenge-status');if(c.open&&url){state.href=url;state.target='_blank';state.rel='noopener';}const label=el('span');label.append(el('i'),el('span','',c.status));state.append(label,el('span','',c.open&&url?'↗':'COMING SOON'));n.append(state);$('#challenge-grid').append(n);
   });
-  function renderPartners(filter='all') {
-    const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published&&(filter==='all'||p.category===filter));
+  function renderPartners() {
+    const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published);
     items.forEach(p=>{const url=validUrl(p.url);const n=el(url?'a':'article','partner-card');if(url){n.href=url;n.target='_blank';n.rel='noopener';n.setAttribute('aria-label',p.name+' 官網（另開分頁）');}if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));grid.append(n);});
-    const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續解鎖。'),el('span','mono',filter==='community'?'COMMUNITY / COMING SOON':filter==='media'?'MEDIA / COMING SOON':'NEXT UP / COMING SOON'));grid.append(pending);
+    const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續加入。'),el('span','mono','MORE TO COME'));grid.append(pending);
   }
-  renderPartners();document.querySelectorAll('[data-partner-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-partner-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});renderPartners(button.dataset.partnerFilter);}));
+  renderPartners();
   const speakers=data.speakers.filter(s=>s.published);
   if(!speakers.length){const n=el('div','speaker-pending');const copy=el('div');copy.append(el('strong','','各行各業的 AI 實踐者，正在加入。'),el('p','','講者與分享主題將陸續公布，敬請期待。'));n.append(copy,el('span','','↗'));$('#speaker-grid').append(n);}
   speakers.forEach(s=>{const n=el('article','speaker-card');if(s.photo){const img=el('img');img.src=s.photo;img.alt=s.name;img.loading='lazy';n.append(img);}n.append(el('h4','',s.name),el('p','',s.role),el('p','',s.topic));$('#speaker-grid').append(n);});
