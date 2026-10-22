@@ -42,3 +42,14 @@
 /* Keep the partners heading quieter than the main program sections. */
 .people .heading-row{align-items:center;gap:24px;margin-bottom:28px}
 .people .heading-row h2{font-size:clamp(24px,2.5vw,34px);font-weight:700;line-height:1.5;letter-spacing:-.025em;text-wrap:balance}
+
+/* Compact partner logos, balanced by each brand's proportions. */
+#partner-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding:20px 0;border-bottom:0}
+#partner-grid .partner-card{min-width:0;min-height:82px;padding:16px 12px}
+#partner-grid .partner-card img{width:112px;height:36px;max-width:100%;object-fit:contain}
+#partner-grid img[alt="Red Bull"]{width:80px;height:44px}
+#partner-grid img[alt="SOKER"]{width:96px;height:54px}
+#partner-grid .partner-pending{padding:14px 0;border-top:0;justify-content:flex-start}
+@media(max-width:800px){#partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#partner-grid .partner-card{min-height:76px;padding:12px 8px}#partner-grid .partner-card img{width:100px;height:32px}#partner-grid img[alt="Red Bull"]{width:72px;height:40px}#partner-grid img[alt="SOKER"]{width:86px;height:48px}}
+
+#partner-grid img[alt="SOKER"]{mix-blend-mode:multiply}

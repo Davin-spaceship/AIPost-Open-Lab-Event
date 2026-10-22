@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 64" width="292" height="64">
+  <style>
+    .name-text { font-family: Georgia, serif; font-size: 56px; font-weight: 700; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-size: 24px; font-weight: 800; }
+  </style>
+  <text x="4" y="46" class="name-text">
+    <tspan fill="#3F6FD8">x</tspan><tspan fill="#26251E">Agent</tspan>
+  </text>
+  <rect x="214" y="11" width="70" height="40" rx="10" fill="#3F6FD8"/>
+  <text x="249" y="39" fill="#FFFFFF" class="badge-text" text-anchor="middle">ID</text>
+</svg>

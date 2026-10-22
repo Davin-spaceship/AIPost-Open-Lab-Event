@@ -20,7 +20,7 @@
   });
   function renderPartners() {
     const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published);
-    items.forEach(p=>{const url=validUrl(p.url);const n=el(url?'a':'article','partner-card');if(url){n.href=url;n.target='_blank';n.rel='noopener';n.setAttribute('aria-label',p.name+' 官網（另開分頁）');}if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));grid.append(n);});
+    items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));grid.append(n);});
     const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續加入。'),el('span','mono','MORE TO COME'));grid.append(pending);
   }
   renderPartners();

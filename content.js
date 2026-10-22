@@ -19,12 +19,12 @@ window.OPENLAB = {
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by Red Bull',title:'吃點東西，繼續聊。',description:'專屬名牌把 AI 興趣變成開場白。17:30 起搭配餐食、酒水與非酒精飲品，讓交流繼續。',symbol:'↔'}
   ],
   partners:[
-    {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'',url:'',published:true},
-    {name:'GIGABYTE',category:'brand',role:'AI Playground 設備支持',description:'',logo:'',url:'',published:true},
-    {name:'xAgent ID',category:'brand',role:'',description:'',logo:'',url:'https://xagent.id/',published:true},
-    {name:'Red Bull',category:'brand',role:'',description:'',logo:'',url:'',published:true},
-    {name:'SOKER',category:'brand',role:'',description:'',logo:'',url:'https://www.soker.com.tw/',published:true},
-    {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'mixroute-logo.svg',url:'https://mixroute.ai/',published:true}],
+    {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia.svg',url:'',published:true},
+    {name:'GIGABYTE',category:'brand',role:'AI Playground 設備支持',description:'',logo:'logos/gigabyte.png',url:'',published:true},
+    {name:'xAgent ID',category:'brand',role:'',description:'',logo:'logos/xagent.svg',url:'https://xagent.id/',published:true},
+    {name:'Red Bull',category:'brand',role:'',description:'',logo:'logos/red-bull.svg',url:'',published:true},
+    {name:'SOKER',category:'brand',role:'',description:'',logo:'logos/soker.png',url:'https://www.soker.com.tw/',published:true},
+    {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'以 API 資源與品牌特別獎，支持 AI 創作挑戰。額度配置及參與辦法將另行公布。',logo:'logos/mixroute.svg',url:'https://mixroute.ai/',published:true}],
   speakers:[],
   challenges:[
     {id:'useless',name:'Useless AI Challenge',title:'沒什麼用。\n但很想玩。',description:'做一個現在看似沒用，卻讓人忍不住想分享的 AI。我們想看的是腦洞、巧思，還有「你到底怎麼想到的？」',examples:['把 PDF 變成宮鬥劇','會假裝自己很忙的 AI','隨台股漲跌變語氣的電子寵物'],note:'示例是創作靈感，不是指定題目。',status:'競賽辦法預計 10/28 公布',rulesUrl:'',open:false},
