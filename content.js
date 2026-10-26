@@ -16,7 +16,7 @@ window.OPENLAB = {
     {number:'03',tag:'TOUCH',category:'try',name:'AI Playground',support:'Powered by NVIDIA & GIGABYTE',title:'轉一道任務，帶走一個成果。',description:'輪盤抽題，跟著任務卡在志工引導下實作。影像、Agent、Coding、音樂與資安五類主題桌，等你來試。',href:'#playground',symbol:'✳'},
     {number:'04',tag:'MAKE',category:'create',name:'AI Build Challenge',support:'Supported by MixRoute & Partners',title:'把你的腦洞，做成作品。',description:'有沒有用，以後再說。網站、Agent、工作流或任何 AI 實作，帶著你的想法來參賽。',href:'/challenge/',symbol:'✎'},
     {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by Red Bull',title:'當程式碼，變成樂器。',description:'我們正邀請音樂創作者與 Live Coder，探索即時生成的聲音與視覺。演出安排將陸續公布。',symbol:'≋'},
-    {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by Red Bull',title:'吃點東西，繼續聊。',description:'專屬名牌把 AI 興趣變成開場白。17:30 起搭配餐食、酒水與非酒精飲品，讓交流繼續。',symbol:'↔'}
+    {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by Red Bull',title:'吃點東西，繼續聊。',description:'從共同的 AI 興趣開始，認識一起交流的新夥伴。17:30 起搭配餐食、酒水與非酒精飲品，讓交流繼續。',symbol:'↔'}
   ],
   partners:[
     {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia.svg',url:'',published:true},
@@ -31,12 +31,12 @@ window.OPENLAB = {
   challenges:[
     {id:'build',name:'OPEN LAB AI Build Challenge',title:'有沒有用，以後再說。\n一直想做，這次就做。',description:'AI 實作挑戰賽｜作品形式不限，個人或團隊皆可免費參賽。讓來自企業、創投、媒體與 AI 社群的夥伴看見你的想法。',examples:['網站、App、Agent、Bot、工作流、遊戲、工具或互動裝置……','已完成或開發中皆可，投稿時須能展示核心功能。'],note:'競賽報名與 OPEN LAB 活動票分開辦理。',status:'競賽專頁・免費報名',rulesUrl:'/challenge/',open:true}
   ],
-  schedule:[{time:'13:00',title:'先見面，再暖身',description:'報到、拿名牌，逛逛現場。'}, {time:'13:30',title:'OPEN LAB 開始',description:'短講、Demo、產品體驗與創作互動穿插進行，留時間給你試玩與聊天。'}, {time:'17:30',title:'把沒聊完的，繼續聊',description:'餐食、酒水與非酒精飲品，自由交流。演出安排及結束時間另行公告。'}, {time:'晚間',title:'AI Build Challenge 決賽 Demo',description:'入選決賽的作品將在現場快閃展示，並頒獎。安排於 17:30 餐敘與交流時段之後，實際開始時間、時長與流程另行公布。'}],
+  schedule:[{time:'13:00',title:'先見面，再暖身',description:'報到、熟悉場地，逛逛現場。'}, {time:'13:30',title:'OPEN LAB 開始',description:'短講、Demo、產品體驗與創作互動穿插進行，留時間給你試玩與聊天。'}, {time:'17:30',title:'把沒聊完的，繼續聊',description:'餐食、酒水與非酒精飲品，自由交流。演出安排及結束時間另行公告。'}, {time:'晚間',title:'AI Build Challenge 決賽 Demo',description:'入選決賽的作品將在現場快閃展示，並頒獎。安排於 17:30 餐敘與交流時段之後，實際開始時間、時長與流程另行公布。'}],
   faq:[
     {question:'沒有技術背景，也可以參加嗎？',answer:'當然可以。活動歡迎對 AI 感到好奇的人。你可以聽分享、看 Demo、體驗產品，或來認識新朋友；AI 實作挑戰賽也歡迎個人或團隊免費報名，作品形式不限。'},
-    {question:'一個人來，會不會尷尬？',answer:'每位參加者都有專屬名牌，寫上名字、關注的 AI 主題與交流意向。從一句「你也在玩這個？」開始，就有機會認識新的夥伴。'},
+    {question:'一個人來，會不會尷尬？',answer:'活動安排分享、體驗與自由交流，讓共同的 AI 興趣成為話題。從一句「你也在玩這個？」開始，就有機會認識新的夥伴。'},
     {question:'要帶電腦嗎？需要每一場都參加嗎？',answer:'AI Playground 預計提供 8–12 台筆電／桌機，依時段與名額安排體驗；若想自由創作，也可以帶自己的電腦。設備與預約方式以最終公告為準。你可以自由切換分享與體驗區，不需要從頭坐到尾。'},
-    {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、專屬名牌、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
+    {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、自由交流、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
     {question:'競賽需要另外報名嗎？',answer:'需要。AI 實作挑戰賽免費報名，請至競賽專頁登記與提交作品；購買 OPEN LAB 活動票不代表已報名競賽，競賽報名也不包含活動票。'},
     {question:'可以退票或轉讓嗎？',answer:'請依 Luma 報名頁最新票務政策辦理。報名、退票與轉讓問題可聯繫 info@aiposthub.com。'},
     {question:'場地入口和完整節目在哪裡看？',answer:'活動館別、報到入口、交通資訊與完整節目將在本頁和 Luma 陸續更新，並通知報名者。'}
