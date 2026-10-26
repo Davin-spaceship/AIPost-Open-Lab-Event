@@ -66,3 +66,5 @@
 @media(max-width:540px){.announcement-bar{padding:11px 20px;font-size:10px}.announcement-bar #early-countdown{font-size:13px;min-width:125px}.announcement-bar #announcement-deadline{font-size:9px}.announcement-bar>a{font-size:10px}.mobile-challenge-link{font-size:10px}.challenge-prizes{padding:25px}.challenge-dates{grid-template-columns:1fr;gap:14px}.challenge-dates p{display:flex;align-items:center;gap:20px}.challenge-dates span{margin:0;width:85px;font-size:22px}.challenge-links{align-items:stretch;flex-direction:column;gap:20px}.challenge-links .text-link{align-self:flex-start}}
 
 .schedule .schedule-time{font:500 24px var(--mono);color:var(--lime)}@media(max-width:540px){.schedule .schedule-time{font-size:21px}}
+
+.challenge-video-note{font-size:13px;line-height:1.9;padding:22px 0 0;color:#d5dcc8}.challenge-video-note strong{color:var(--lime);font-size:15px}
