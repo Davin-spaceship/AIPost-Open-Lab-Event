@@ -27,7 +27,7 @@
   const speakers=data.speakers.filter(s=>s.published);
   if(!speakers.length){const n=el('div','speaker-pending');const copy=el('div');copy.append(el('strong','','各行各業的 AI 實踐者，正在加入。'),el('p','','講者與分享主題將陸續公布，敬請期待。'));n.append(copy,el('span','','↗'));$('#speaker-grid').append(n);}
   speakers.forEach(s=>{const n=el('article','speaker-card');if(s.photo){const img=el('img');img.src=s.photo;img.alt=s.name;img.loading='lazy';n.append(img);}n.append(el('h4','',s.name),el('p','',s.role),el('p','',s.topic));$('#speaker-grid').append(n);});
-  data.schedule.forEach(s=>{const n=el('article');const time=el('time','',s.time);time.dateTime=s.time;const copy=el('div');copy.append(el('h3','',s.title),el('p','',s.description));n.append(time,copy);$('#schedule').append(n);});
+  data.schedule.forEach(s=>{const n=el('article');const time=el(/^\d{2}:\d{2}$/.test(s.time)?'time':'span','schedule-time',s.time);if(time.tagName==='TIME')time.dateTime=s.time;const copy=el('div');copy.append(el('h3','',s.title),el('p','',s.description));n.append(time,copy);$('#schedule').append(n);});
   data.faq.forEach(f=>{const n=el('details');n.append(el('summary','',f.question),el('p','',f.answer));$('#faq-list').append(n);});
   function ticketPhase(now=Date.now()){
     if(now<Date.parse(data.event.earlyDeadline))return {name:'早鳥票',short:'早鳥',label:'EARLY BIRD / 早鳥票',price:data.event.earlyPrice};
