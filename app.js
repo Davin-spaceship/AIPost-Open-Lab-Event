@@ -8,15 +8,15 @@
     const n=el('a','update');n.href=a.href;n.dataset.label=a.label;n.append(el('span','mono',a.label));const copy=el('div');copy.append(el('h3','',a.title),el('p','',a.description));n.append(copy,el('span','update-arrow','↗'));$('#updates-list').append(n);
   });
   data.programs.forEach(p=>{
-    const n=el('article','program-card');n.dataset.category=p.category;const top=el('div','card-top');top.append(el('span','',p.number),el('span','',p.tag));const symbol=el('span','card-symbol',p.symbol);symbol.setAttribute('aria-hidden','true');n.append(top,symbol,el('h3','',p.name),el('p','program-title',p.title),el('p','',p.description));if(p.support)n.append(el('p','program-support',p.support));if(p.href){const more=el('a','text-link','看看體驗內容 ↓');more.href=p.href;n.append(more);}$('#program-grid').append(n);
+    const n=el('article','program-card');n.dataset.category=p.category;const top=el('div','card-top');top.append(el('span','',p.number),el('span','',p.tag));const symbol=el('span','card-symbol',p.symbol);symbol.setAttribute('aria-hidden','true');n.append(top,symbol,el('h3','',p.name),el('p','program-title',p.title),el('p','',p.description));if(p.support)n.append(el('p','program-support',p.support));if(p.href){const more=el('a','text-link',p.href==='/challenge/'?'競賽專頁與報名 ↗':'看看體驗內容 ↓');more.href=p.href;n.append(more);}$('#program-grid').append(n);
   });
   document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
     document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
     document.querySelectorAll('.program-card').forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter;});
   }));
   data.challenges.forEach(c=>{
-    const n=el('article','challenge-card');n.append(el('span','mono',c.name),el('span','challenge-icon',c.id==='useless'?'?':'↗'),el('h3','',c.title),el('p','',c.description));const list=el('ul');c.examples.forEach(x=>list.append(el('li','',x)));n.append(list,el('p','fine-print',c.note));
-    const url=validUrl(c.rulesUrl);const state=el(c.open&&url?'a':'div','challenge-status');if(c.open&&url){state.href=url;state.target='_blank';state.rel='noopener';}const label=el('span');label.append(el('i'),el('span','',c.status));state.append(label,el('span','',c.open&&url?'↗':'COMING SOON'));n.append(state);$('#challenge-grid').append(n);
+    const n=el('article','challenge-card');n.append(el('span','mono',c.name),el('span','challenge-icon','✳'),el('h3','',c.title),el('p','',c.description));const list=el('ul');c.examples.forEach(x=>list.append(el('li','',x)));n.append(list,el('p','fine-print',c.note));
+    const url=validUrl(c.rulesUrl);const state=el(c.open&&url?'a':'div','challenge-status');if(c.open&&url){state.href=url;if(new URL(url).origin!==location.origin){state.target='_blank';state.rel='noopener';}}const label=el('span');label.append(el('i'),el('span','',c.status));state.append(label,el('span','',c.open&&url?'↗':'COMING SOON'));n.append(state);$('#challenge-grid').append(n);
   });
   function renderPartners() {
     const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published);
@@ -49,6 +49,15 @@
   }
   const invite=$('.partner-invite p');invite.textContent=invite.textContent.replace('带','帶');
   const syncAnnouncement=()=>{const phase=ticketPhase();if(phase.price!==data.event.earlyPrice){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent=phase.name+'開放中，12/5 現場見';n.querySelector('p').textContent=`${phase.name} NT$${phase.price.toLocaleString('en-US')}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
+  function updateEarlyCountdown(now=Date.now()){
+    const remaining=Math.max(0,Date.parse(data.event.earlyDeadline)-now);
+    const label=$('#announcement-label'),clock=$('#early-countdown'),deadline=$('#announcement-deadline'),link=$('#announcement-ticket');
+    if(!label||!clock)return;
+    if(remaining>0){const total=Math.floor(remaining/1000);const days=Math.floor(total/86400),hours=Math.floor(total%86400/3600),minutes=Math.floor(total%3600/60),seconds=total%60;
+      label.textContent='早鳥 NT$'+data.event.earlyPrice+'・倒數';clock.hidden=false;clock.textContent=days+' 天 '+String(hours).padStart(2,'0')+':'+String(minutes).padStart(2,'0')+':'+String(seconds).padStart(2,'0');deadline.textContent=data.event.earlyLabel+' 截止（台灣時間）';link.textContent='立即搶早鳥 ↗';
+    }else{const phase=ticketPhase(now);label.textContent='早鳥已截止・'+phase.name+' NT$'+phase.price.toLocaleString('en-US');clock.hidden=true;deadline.textContent='12/5 台北瓶蓋工廠・票券供應依 Luma 即時資訊為準';link.textContent='前往購票 ↗';}
+  }
+  updateEarlyCountdown();setInterval(updateEarlyCountdown,1000);
   updateTickets();syncAnnouncement();setInterval(()=>{updateTickets();syncAnnouncement();},60000);
   const requestForm=$('#partnership-form');
   requestForm.addEventListener('submit',async e=>{
