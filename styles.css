@@ -53,3 +53,8 @@
 @media(max-width:800px){#partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#partner-grid .partner-card{min-height:76px;padding:12px 8px}#partner-grid .partner-card img{width:100px;height:32px}#partner-grid img[alt="Red Bull"]{width:72px;height:40px}#partner-grid img[alt="SOKER"]{width:86px;height:48px}}
 
 #partner-grid img[alt="SOKER"]{mix-blend-mode:multiply}
+
+/* Community wordmarks retain their original artwork and proportions. */
+#partner-grid img[alt="Lovable Community"]{width:148px;height:72px;mix-blend-mode:multiply}
+#partner-grid img[alt="The AI Collective"]{width:120px;height:58px}
+@media(max-width:800px){#partner-grid img[alt="Lovable Community"]{width:132px;height:64px}#partner-grid img[alt="The AI Collective"]{width:108px;height:52px}}
