@@ -69,7 +69,11 @@
 
 .challenge-video-note{font-size:13px;line-height:1.9;padding:22px 0 0;color:#d5dcc8}.challenge-video-note strong{color:var(--lime);font-size:15px}
 
-/* Annual event identity and activity theme. */
-.hero .hero-kicker{font-size:20px;font-weight:700;color:var(--paper)}
-.hero h2.hero-theme{font-size:clamp(24px,2.6vw,38px);line-height:1.5;letter-spacing:-.025em}
-@media(max-width:600px){.hero .hero-kicker{font-size:18px}.hero h2.hero-theme{font-size:24px}.hero h2.hero-theme br{display:block}}
+/* Annual event identity: compact eyebrow and one balanced activity line. */
+.hero .hero-kicker{display:flex;align-items:center;gap:16px;font-size:16px;font-weight:700;letter-spacing:.04em;color:var(--paper);margin-bottom:24px}
+.hero-city{font:500 10px var(--mono);letter-spacing:.1em;color:#a5aa99;border-left:1px solid #626856;padding-left:16px}
+.hero h2.hero-theme{display:flex;align-items:center;gap:clamp(10px,1.2vw,18px);width:max-content;max-width:100%;font-size:clamp(17px,1.7vw,25px);font-weight:600;line-height:1.4;letter-spacing:.02em;margin-top:32px;padding-top:22px;border-top:1px solid #ffffff26}
+.hero-theme>span{white-space:nowrap}
+.hero-theme .theme-cross{font-size:.72em;font-weight:400;color:var(--lime)}
+.hero .hero-description{margin-top:18px;line-height:1.9;max-width:390px}
+@media(max-width:600px){.hero .hero-kicker{font-size:15px;gap:12px;margin-bottom:22px}.hero-city{font-size:9px;padding-left:12px}.hero h2.hero-theme{font-size:clamp(14px,4vw,19px);gap:10px;margin-top:26px;padding-top:18px}.hero .hero-description{font-size:12px;max-width:330px;margin-top:15px}}
