@@ -3,7 +3,7 @@
  * 不放洽談中的品牌，也不以歷來合作代表本次合作。
  */
 window.OPENLAB = {
-  event: {name:'AI郵報 OPEN LAB 2026',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
+  event: {name:'AI郵報年會 OPEN LAB 2026 台北｜主題分享 × AI 體驗 × 社群交流',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
   announcements:[
     {label:'AI PLAYGROUND',title:'輪盤抽任務，親手完成一個 AI 作品',description:'五類主題桌、志工引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'#playground'},
     {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},

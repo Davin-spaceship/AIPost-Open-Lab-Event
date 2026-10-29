@@ -68,3 +68,8 @@
 .schedule .schedule-time{font:500 24px var(--mono);color:var(--lime)}@media(max-width:540px){.schedule .schedule-time{font-size:21px}}
 
 .challenge-video-note{font-size:13px;line-height:1.9;padding:22px 0 0;color:#d5dcc8}.challenge-video-note strong{color:var(--lime);font-size:15px}
+
+/* Annual event identity and activity theme. */
+.hero .hero-kicker{font-size:20px;font-weight:700;color:var(--paper)}
+.hero h2.hero-theme{font-size:clamp(24px,2.6vw,38px);line-height:1.5;letter-spacing:-.025em}
+@media(max-width:600px){.hero .hero-kicker{font-size:18px}.hero h2.hero-theme{font-size:24px}.hero h2.hero-theme br{display:block}}
