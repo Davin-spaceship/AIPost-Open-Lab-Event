@@ -33,7 +33,12 @@ window.OPENLAB = {
   challenges:[
     {id:'build',name:'OPEN LAB AI Build Challenge',title:'有沒有用，以後再說。\n一直想做，這次就做。',description:'AI 實作挑戰賽｜作品形式不限，個人或團隊皆可免費參賽。讓來自企業、創投、媒體與 AI 社群的夥伴看見你的想法。',examples:['網站、App、Agent、Bot、工作流、遊戲、工具或互動裝置……','已完成或開發中皆可，投稿時須能展示核心功能。'],note:'競賽報名與 OPEN LAB 活動票分開辦理。',status:'競賽專頁・免費報名',rulesUrl:'/challenge/',open:true}
   ],
-  schedule:[{time:'13:00',title:'先見面，再暖身',description:'報到、熟悉場地，逛逛現場。'}, {time:'13:30',title:'OPEN LAB 開始',description:'短講、Demo、產品體驗與創作互動穿插進行，留時間給你試玩與聊天。'}, {time:'17:30',title:'自由交流與夥伴連結',description:'備有餐點與飲品，和剛認識的夥伴繼續聊。演出安排及結束時間另行公告。'}, {time:'晚間',title:'AI Build Challenge 決賽 Demo',description:'入選決賽的作品將在現場快閃展示，並頒獎。安排於 17:30 餐敘與交流時段之後，實際開始時間、時長與流程另行公布。'}],
+  schedule:[
+    {time:'13:00',title:'報到，讓好奇心暖身',description:'出示電子票券，熟悉場地，也和身邊的 AI 同好打個招呼。'},
+    {time:'13:30',title:'聽分享、看 Demo，親手玩 AI',description:'AI Talks & Demos、Playground、讀者調查與告解牆，從新觀點到動手體驗，找到你感興趣的內容。'},
+    {time:'17:30',title:'餐食與交流，把話題繼續聊下去',description:'備有餐食、酒水與非酒精飲品。和講者、創作者、產品團隊與新朋友交換想法；AI Music & Live Coding 安排將陸續公布。'},
+    {time:'晚間',title:'AI Build Challenge 決賽與頒獎',description:'看入選團隊展示作品與操作成果，分享創作想法，一起見證獎項揭曉。'}
+  ],
   faq:[
     {question:'沒有技術背景，也可以參加嗎？',answer:'當然可以。活動歡迎對 AI 感到好奇的人。你可以聽分享、看 Demo、體驗產品，或來認識新朋友；AI 實作挑戰賽也歡迎個人或團隊免費報名，作品形式不限。'},
     {question:'一個人來，會不會尷尬？',answer:'活動安排分享、體驗與自由交流，讓共同的 AI 興趣成為話題。從一句「你也在玩這個？」開始，就有機會認識新的夥伴。'},
