@@ -28,6 +28,7 @@ window.OPENLAB = {
     {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'提供 50 組 US$50 開發額度，並以 US$300／US$150／US$50 API 額度特別獎支持 AI 實作。',logo:'logos/mixroute.svg',url:'https://mixroute.ai/',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
     {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true},
+    {name:'AI郵報學院',category:'brand',role:'',description:'',logo:'logos/aipost-academy.png',url:'https://academy.aiposthub.com/',published:true},
     {name:'twin3.ai',category:'brand',role:'',description:'',logo:'logos/twin3.svg',url:'https://twin3.ai/',published:true}],
   speakers:[],
   challenges:[
