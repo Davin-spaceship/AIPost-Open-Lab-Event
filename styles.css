@@ -87,8 +87,8 @@
 #partners .section-top{margin-bottom:20px}#partners .heading-row{margin-bottom:12px}#partners .heading-row p{font-size:12px}
 #partners .partner-join{margin-top:12px;font-size:12px}
 #partner-grid{padding:12px 0;gap:8px 20px}
-#partner-grid .partner-card{background:#ffffff85;border:1px solid #11121010;min-height:86px;border-radius:4px;padding:16px}
-#partner-grid a.partner-card:hover{background:#fff;border-color:#11121055}
+#partner-grid .partner-card{background:transparent;border:0;min-height:86px;border-radius:0;padding:16px}
+#partner-grid a.partner-card:hover{background:transparent;opacity:.75}
 #partner-grid img[alt="GAIA"]{width:174px;height:48px;mix-blend-mode:multiply}
 #partner-grid img[alt="twin3.ai"]{width:124px;height:42px}
 #partner-grid .partner-pending{min-height:86px;padding:14px;font-size:11px}
