@@ -23,12 +23,12 @@ window.OPENLAB = {
     {name:'GIGABYTE',category:'brand',role:'AI Playground 設備支持',description:'',logo:'logos/gigabyte.png',url:'',published:true},
     {name:'xAgent ID',category:'brand',role:'',description:'',logo:'logos/xagent.svg',url:'https://xagent.id/',published:false},
     {name:'Red Bull',category:'brand',role:'',description:'',logo:'logos/red-bull.svg',url:'',published:true},
-    {name:'twin3.ai',category:'brand',role:'',description:'',logo:'logos/twin3.svg',url:'https://twin3.ai/',published:true},
     {name:'GAIA',category:'brand',role:'',description:'',logo:'logos/gaia-horizontal.png',url:'',published:true},
     {name:'SOKER',category:'brand',role:'',description:'',logo:'logos/soker.png',url:'https://www.soker.com.tw/',published:true},
     {name:'MixRoute',category:'brand',role:'品牌／技術／獎品夥伴',description:'提供 50 組 US$50 開發額度，並以 US$300／US$150／US$50 API 額度特別獎支持 AI 實作。',logo:'logos/mixroute.svg',url:'https://mixroute.ai/',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
-    {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true}],
+    {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true},
+    {name:'twin3.ai',category:'brand',role:'',description:'',logo:'logos/twin3.svg',url:'https://twin3.ai/',published:true}],
   speakers:[],
   challenges:[
     {id:'build',name:'OPEN LAB AI Build Challenge',title:'有沒有用，以後再說。\n一直想做，這次就做。',description:'AI 實作挑戰賽｜作品形式不限，個人或團隊皆可免費參賽。讓來自企業、創投、媒體與 AI 社群的夥伴看見你的想法。',examples:['網站、App、Agent、Bot、工作流、遊戲、工具或互動裝置……','已完成或開發中皆可，投稿時須能展示核心功能。'],note:'競賽報名與 OPEN LAB 活動票分開辦理。',status:'競賽專頁・免費報名',rulesUrl:'/challenge/',open:true}
