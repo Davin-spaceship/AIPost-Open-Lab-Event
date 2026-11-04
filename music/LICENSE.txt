@@ -1,15 +1,30 @@
-"Cipher", "Digital Lemonade", "Wallpaper"
+OPEN LAB DJ Agent — Music attribution
+
+“Cipher”, “Digital Lemonade”, “Wallpaper”, “Space Jazz”, “Voxel Revolution”, “Laser Groove”, “Chill Wave”, “Bit Shift”, “Bit Quest”, “EDM Detection Mode”, “Dream Culture”, “Mining by Moonlight”, “RetroFuture Clean”, “Hackbeat”, “Ether Disco”
 Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 4.0 License
 https://creativecommons.org/licenses/by/4.0/
 
 Original recordings, unmodified. Filenames changed for website paths only.
-Source catalog and attribution template verified 2026-11-04:
+Official catalog and attribution template verified 2026-11-04:
 https://incompetech.com/music/royalty-free/music.html
 https://incompetech.com/music/royalty-free/pieces.json
 
 Cipher — ISRC USUAN1100844 — original file Cipher2.mp3
 Digital Lemonade — ISRC USUAN1700010 — original file Digital Lemonade.mp3
 Wallpaper — ISRC USUAN1100843 — original file Wallpaper.mp3
+Space Jazz — ISRC USUAN2100030 — original file Space Jazz.mp3
+Voxel Revolution — ISRC USUAN2000025 — original file Voxel Revolution.mp3
+Laser Groove — ISRC USUAN1700017 — original file Laser Groove.mp3
+Chill Wave — ISRC USUAN1600048 — original file Chill Wave.mp3
+Bit Shift — ISRC USUAN1600045 — original file Bit Shift.mp3
+Bit Quest — ISRC USUAN1500073 — original file Bit Quest.mp3
+EDM Detection Mode — ISRC USUAN1500026 — original file EDM Detection Mode.mp3
+Dream Culture — ISRC USUAN1300046 — original file Dream Culture.mp3
+Mining by Moonlight — ISRC USUAN1200089 — original file Mining by Moonlight.mp3
+RetroFuture Clean — ISRC USUAN1200040 — original file RetroFuture Clean.mp3
+Hackbeat — ISRC USUAN1100805 — original file Hackbeat.mp3
+Ether Disco — ISRC USUAN1100237 — original file Ether Disco.mp3
+
 Download base: https://incompetech.com/music/royalty-free/mp3-royaltyfree/
 Attribution is also accessible in the homepage music player.
