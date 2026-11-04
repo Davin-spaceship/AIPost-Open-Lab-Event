@@ -1,0 +1,15 @@
+"Cipher", "Digital Lemonade", "Wallpaper"
+Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+Original recordings, unmodified. Filenames changed for website paths only.
+Source catalog and attribution template verified 2026-11-04:
+https://incompetech.com/music/royalty-free/music.html
+https://incompetech.com/music/royalty-free/pieces.json
+
+Cipher — ISRC USUAN1100844 — original file Cipher2.mp3
+Digital Lemonade — ISRC USUAN1700010 — original file Digital Lemonade.mp3
+Wallpaper — ISRC USUAN1100843 — original file Wallpaper.mp3
+Download base: https://incompetech.com/music/royalty-free/mp3-royaltyfree/
+Attribution is also accessible in the homepage music player.
