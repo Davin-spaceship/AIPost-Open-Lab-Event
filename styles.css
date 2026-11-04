@@ -134,3 +134,7 @@
 @media(max-width:700px){#info{padding-top:42px;padding-bottom:36px}#info .section-top{font-size:9px;gap:18px;line-height:1.7;margin-bottom:26px}.info-heading{margin-bottom:26px}#info .info-heading h2{font-size:clamp(27px,5.9vw,38px)}.info-heading>p{font-size:12px;max-width:340px}#info .info-grid{grid-template-columns:1fr;gap:30px}.info-date>strong{font-size:62px}.info-date{gap:20px}.info-star{font-size:44px}.info-flow-heading{display:flex}.info-flow-heading h3{font-size:18px}.info-flow-heading>.mono{margin:0;font-size:8px}#info .schedule article{grid-template-columns:65px minmax(0,1fr);gap:16px;padding:20px 0 20px 16px}#info .schedule h3{font-size:15px}#info .schedule p{font-size:11px}.info-bottom{display:block;margin-top:24px}.info-bottom .text-link{margin-top:14px}.info-bottom span{font-size:10px}}
 
 .info-date b{white-space:nowrap}.info-date>div{flex-shrink:0}@media(max-width:700px){.info-date{gap:16px}.info-date>strong{font-size:58px}.info-date .info-star{display:none}}
+
+/* Preserve the official NVIDIA RTX Spark badge artwork and proportions. */
+#partner-grid img[alt="NVIDIA"]{width:148px;height:auto;max-height:58px;object-fit:contain}
+@media(max-width:800px){#partner-grid img[alt="NVIDIA"]{width:124px;max-height:48px}}

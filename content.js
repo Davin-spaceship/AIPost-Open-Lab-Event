@@ -19,7 +19,7 @@ window.OPENLAB = {
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by Red Bull',title:'讓交流繼續發生。',description:'和講者、創作者、產品團隊與其他讀者自由交流。分享正在做的事、交換想法，也認識下一位可能一起合作的夥伴。',symbol:'↔'}
   ],
   partners:[
-    {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia.svg',url:'',published:true},
+    {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia-rtx-spark.svg',url:'',published:true},
     {name:'GIGABYTE',category:'brand',role:'AI Playground 設備支持',description:'',logo:'logos/gigabyte.png',url:'',published:true},
     {name:'xAgent ID',category:'brand',role:'',description:'',logo:'logos/xagent.svg',url:'https://xagent.id/',published:false},
     {name:'Red Bull',category:'brand',role:'',description:'',logo:'logos/red-bull.svg',url:'',published:true},
