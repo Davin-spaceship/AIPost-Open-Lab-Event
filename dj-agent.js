@@ -119,7 +119,7 @@
   }
   const root = document.createElement('aside');
   root.className = 'dj-agent'; root.setAttribute('aria-label','OPEN LAB RADIO DJ Agent 模擬直播電台');
-  root.innerHTML = `<button class="dj-toggle" aria-expanded="false" aria-controls="dj-panel"><span class="dj-face" aria-hidden="true">[•ᴗ•]</span><span>OPEN LAB RADIO<span class="dj-indicator">DJ AGENT · ON AIR</span></span><span class="dj-live">● LIVE</span></button>
+  root.innerHTML = `<button class="dj-toggle" aria-label="開啟 OPEN LAB RADIO 電台" title="OPEN LAB RADIO" aria-expanded="false" aria-controls="dj-panel"><span class="dj-face" aria-hidden="true">[•ᴗ•]</span><span>OPEN LAB RADIO<span class="dj-indicator">DJ AGENT · ON AIR</span></span><span class="dj-live">● LIVE</span></button>
   <div id="dj-panel" hidden>
     <div class="dj-heading"><span class="dj-live">● LIVE STREAM</span><span class="dj-clock"></span><button class="dj-close" aria-label="收合電台">−</button></div>
     <h2>OPEN LAB RADIO<span>HOSTED BY DJ AGENT</span></h2>
@@ -140,7 +140,7 @@
   const panel = get('#dj-panel'), play = get('.dj-play'), connection = get('.dj-connection');
   const format = seconds => Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2,'0');
   get('.dj-library').textContent = tracks.map(t => '“' + t.title + '”').join(', ');
-  function expand(open) { panel.hidden = !open; get('.dj-toggle').setAttribute('aria-expanded',String(open)); }
+  function expand(open) { panel.hidden = !open; get('.dj-toggle').setAttribute('aria-expanded',String(open)); get('.dj-toggle').setAttribute('aria-label', (open ? '收合' : '開啟') + ' OPEN LAB RADIO 電台'); }
   get('.dj-toggle').onclick = () => expand(panel.hidden);
   get('.dj-close').onclick = () => { expand(false); get('.dj-toggle').focus(); };
   root.addEventListener('keydown',e => { if(e.key === 'Escape') { expand(false); get('.dj-toggle').focus(); } });
