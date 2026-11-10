@@ -58,15 +58,6 @@
   }
   const invite=$('.partner-invite p');invite.textContent=invite.textContent.replace('带','帶');
   const syncAnnouncement=()=>{const phase=ticketPhase();if(phase.price!==data.event.earlyPrice){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent=phase.name+'開放中，12/5 現場見';n.querySelector('p').textContent=`${phase.name} NT$${phase.price.toLocaleString('en-US')}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
-  function updateEarlyCountdown(now=Date.now()){
-    const remaining=Math.max(0,Date.parse(data.event.earlyDeadline)-now);
-    const label=$('#announcement-label'),clock=$('#early-countdown'),deadline=$('#announcement-deadline'),link=$('#announcement-ticket');
-    if(!label||!clock)return;
-    if(remaining>0){const total=Math.floor(remaining/1000);const days=Math.floor(total/86400),hours=Math.floor(total%86400/3600),minutes=Math.floor(total%3600/60),seconds=total%60;
-      label.textContent='早鳥 NT$'+data.event.earlyPrice+'・倒數';clock.hidden=false;clock.textContent=days+' 天 '+String(hours).padStart(2,'0')+':'+String(minutes).padStart(2,'0')+':'+String(seconds).padStart(2,'0');deadline.textContent=data.event.earlyLabel+' 截止（台灣時間）';link.textContent='立即搶早鳥 ↗';
-    }else{const phase=ticketPhase(now);label.textContent='早鳥已截止・'+phase.name+' NT$'+phase.price.toLocaleString('en-US');clock.hidden=true;deadline.textContent='12/5 台北瓶蓋工廠・票券供應依 Luma 即時資訊為準';link.textContent='前往購票 ↗';}
-  }
-  updateEarlyCountdown();setInterval(updateEarlyCountdown,1000);
   updateTickets();syncAnnouncement();setInterval(()=>{updateTickets();syncAnnouncement();},60000);
   const requestForm=$('#partnership-form');
   requestForm.addEventListener('submit',async e=>{
