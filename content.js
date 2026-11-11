@@ -29,7 +29,7 @@ window.OPENLAB = {
     {name:'SOKER',category:'brand',role:'',description:'',logo:'logos/soker.png',url:'https://www.soker.com.tw/',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
     {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true},
-    {name:'AI郵報學院',category:'brand',role:'',description:'',logo:'logos/aipost-academy.png',url:'https://academy.aiposthub.com/',published:true},
+    {name:'AI郵報學院',category:'brand',role:'',description:'',logo:'logos/aipost-academy.png?v=20261111',url:'https://academy.aiposthub.com/',published:true},
     {name:'twin3.ai',category:'brand',role:'',description:'',logo:'logos/twin3.svg',url:'https://twin3.ai/',published:true}],
   speakers:[],
   challenges:[

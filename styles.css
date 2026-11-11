@@ -161,5 +161,5 @@
 /* Competition recruitment links */
 .ticker{display:block}.ticker:hover>div,.ticker:focus-visible>div{animation-play-state:paused}.ticker:focus-visible{outline-offset:-5px}.announcement-bar:focus-visible{outline-offset:-3px}.announcement-bar:hover .announcement-cta{text-decoration:underline}
 
-/* Render the Academy lockup in dark ink on the partner section. */
-#partner-grid .partner-card img[alt="AI郵報學院"]{width:150px;height:56px;object-fit:cover;object-position:left center;filter:grayscale(1) invert(1) contrast(1.2);mix-blend-mode:multiply}
+/* Preserve the approved Academy artwork, colors and complete aspect ratio. */
+#partner-grid .partner-card img[alt="AI郵報學院"]{width:150px;height:auto;max-height:none;object-fit:contain;filter:none;mix-blend-mode:normal}
