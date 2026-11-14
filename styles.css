@@ -163,3 +163,7 @@
 
 /* Preserve the approved Academy artwork, colors and complete aspect ratio. */
 #partner-grid .partner-card img[alt="AI郵報學院"]{width:150px;height:auto;max-height:none;object-fit:contain;filter:none;mix-blend-mode:normal}
+
+/* GEORGI supplied wordmark: retain full artwork and natural aspect ratio. */
+#partner-grid img[alt="GEORGI AI"]{width:144px;height:auto;max-height:52px;object-fit:contain}
+@media(max-width:800px){#partner-grid img[alt="GEORGI AI"]{width:124px;max-height:44px}}
