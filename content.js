@@ -31,6 +31,7 @@ window.OPENLAB = {
     {name:'AI郵報學院',category:'brand',role:'',description:'',logo:'logos/aipost-academy.png?v=20261111',url:'https://academy.aiposthub.com/',published:true},
     {name:'STONELINK',category:'brand',role:'',description:'',logo:'logos/stonelink.png',url:'',published:true},
     {name:'twin3.ai',category:'brand',role:'',description:'',logo:'logos/twin3.svg',url:'https://twin3.ai/',published:true},
+    {name:'Glows AI',category:'brand',role:'',description:'',logo:'logos/glows-ai.svg',url:'',published:true},
     {name:'GEORGI AI',category:'brand',role:'',description:'',logo:'logos/georgi-logotype-slate.png',url:'',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
     {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true}],
