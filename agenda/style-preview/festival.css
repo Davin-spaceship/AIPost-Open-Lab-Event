@@ -45,3 +45,5 @@ header.lab-hero{min-height:0;margin-top:16px;padding-top:22px;gap:12px 20px;grid
 @media(max-width:650px){.academy-panel .avatar.photo{width:32px;height:32px;min-width:32px;max-width:32px;flex-basis:32px}.academy-panel .speaker-cell .people{display:grid;grid-template-columns:1fr 1fr;gap:16px 12px}.academy-panel .person{gap:8px}.academy-panel .person strong{font-size:12px}.academy-panel .person small{font-size:9px}.academy-bio{padding:15px}.academy-bios{gap:12px}.academy-bio h3{font-size:14px}}
 
 .avatar.photo.hali{background-image:url('/agenda/assets/hali-20261118.jpg');background-size:140% auto;background-position:48% 27%}
+
+.avatar.photo.janus{background-image:url('/agenda/assets/janus-20261118.jpg');background-size:160% auto;background-position:50% 10%}
