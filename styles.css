@@ -203,3 +203,5 @@
 #community-partner-grid{display:flex;flex-wrap:wrap;gap:16px 24px;padding:8px 0}
 #community-partner-grid .partner-card{width:200px;flex:0 1 200px}
 @media(max-width:600px){.community-partners{padding-top:30px;padding-bottom:30px}.community-partners .heading-row{display:block}.community-partners .heading-row p{margin-top:10px}#community-partner-grid{gap:8px}#community-partner-grid .partner-card{width:calc(50% - 4px);flex-basis:calc(50% - 4px)}}
+
+#community-partner-grid .partner-card img[alt="Unicorns Club 獨角獸俱樂部"]{--partner-width:150px;--partner-height:42px}

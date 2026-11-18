@@ -35,7 +35,8 @@ window.OPENLAB = {
     {name:'GEORGI AI',category:'brand',role:'',description:'',logo:'logos/georgi-logotype-slate.png',url:'',published:true},
     {name:'七點創意',category:'brand',role:'',description:'',logo:'logos/seven-point.png',url:'',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
-    {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true}],
+    {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true},
+    {name:'Unicorns Club 獨角獸俱樂部',category:'community',role:'社群夥伴',description:'',logo:'logos/unicorns-club.webp',url:'https://unicornsclub.xyz/',published:true}],
   speakers:[],
   challenges:[
     {id:'build',name:'OPEN LAB AI Build Challenge',title:'有沒有用，以後再說。\n一直想做，這次就做。',description:'AI 實作挑戰賽｜作品形式不限，個人或團隊皆可免費參賽。讓來自企業、創投、媒體與 AI 社群的夥伴看見你的想法。',examples:['網站、App、Agent、Bot、工作流、遊戲、工具或互動裝置……','已完成或開發中皆可，投稿時須能展示核心功能。'],note:'競賽報名與 OPEN LAB 活動票分開辦理。',status:'競賽專頁・免費報名',rulesUrl:'/challenge/',open:true}
