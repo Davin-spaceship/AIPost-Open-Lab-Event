@@ -189,3 +189,7 @@
 #partner-grid .partner-card img[alt="Lovable Community"]{--partner-width:170px;--partner-height:64px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 #partner-grid .partner-card img[alt="The AI Collective"]{--partner-width:102px;--partner-height:50px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 @media(max-width:800px){#partner-grid .partner-card{height:86px;min-height:86px;padding:8px}#partner-grid .partner-card img[alt]{width:calc(var(--partner-width)*.88);height:calc(var(--partner-height)*.88)}}
+
+/* The Academy original includes extra canvas space; retain its natural height. */
+#partner-grid .partner-card img[alt="AI郵報學院"]{width:146px;height:auto;max-height:78px}
+@media(max-width:800px){#partner-grid .partner-card img[alt="AI郵報學院"]{width:128px;height:auto;max-height:68px}}
