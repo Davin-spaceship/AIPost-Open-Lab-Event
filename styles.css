@@ -167,3 +167,7 @@
 /* GEORGI supplied wordmark: retain full artwork and natural aspect ratio. */
 #partner-grid img[alt="GEORGI AI"]{width:144px;height:auto;max-height:52px;object-fit:contain}
 @media(max-width:800px){#partner-grid img[alt="GEORGI AI"]{width:124px;max-height:44px}}
+
+/* Keep the supplied Seven Point artwork complete while enlarging its visible logo. */
+#partner-grid img[alt="七點創意"]{width:176px;height:auto;max-height:118px;object-fit:contain}
+@media(max-width:800px){#partner-grid img[alt="七點創意"]{width:148px;max-height:100px}}
