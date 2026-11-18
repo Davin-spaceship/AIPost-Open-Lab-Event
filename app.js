@@ -28,8 +28,8 @@
     const url=validUrl(c.rulesUrl);const state=el(c.open&&url?'a':'div','challenge-status');if(c.open&&url){state.href=url;if(new URL(url).origin!==location.origin){state.target='_blank';state.rel='noopener';}}const label=el('span');label.append(el('i'),el('span','',c.status));state.append(label,el('span','',c.open&&url?'↗':'COMING SOON'));n.append(state);$('#challenge-grid').append(n);
   });
   function renderPartners() {
-    const grid=$('#partner-grid');grid.replaceChildren();const items=data.partners.filter(p=>p.published);
-    items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));grid.append(n);});
+    const grid=$('#partner-grid'),communityGrid=$('#community-partner-grid');grid.replaceChildren();communityGrid.replaceChildren();const items=data.partners.filter(p=>p.published);
+    items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));(p.category==='community'?communityGrid:grid).append(n);});
     const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續加入。'),el('span','mono','MORE TO COME'));grid.append(pending);
   }
   renderPartners();
