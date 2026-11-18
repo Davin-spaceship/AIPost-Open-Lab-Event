@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /agenda/style-preview/
+Sitemap: https://openlab.aiposthub.com/sitemap.xml

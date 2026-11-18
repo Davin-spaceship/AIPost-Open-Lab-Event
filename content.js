@@ -5,9 +5,10 @@
 window.OPENLAB = {
   event: {name:'AI郵報年會 OPEN LAB 2026 台北｜主題分享 × AI 體驗 × 社群交流',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠 F 棟',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
   announcements:[
+    {label:'AGENDA',title:'OPEN LAB 2026 活動議程正式公開',description:'下午看 AI 實戰與跨領域對談，17:30 接續 Live Coding、Pitch Battle 與 DJ 音樂交流。',href:'/agenda/'},
     {label:'AI PLAYGROUND',title:'輪盤抽任務，親手完成一個 AI 作品',description:'五類主題桌、志工引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'#playground'},
     {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},
-    {label:'FIRST LOOK',title:'AI郵報 2026 讀者問卷報告，現場大公開',description:'從大家怎麼用 AI，到期待與焦慮。讓讀者的真實聲音成為對話的起點。',href:'#survey'},
+    {label:'FIRST LOOK',title:'2026 AI 郵報讀者調查，活動當天首度公開',description:'由 Davin 現場剖析調查結果，分享觀點與洞察。',href:'#survey'},
     {label:'CHALLENGE',title:'AI 實作挑戰賽，把一直想做的點子做出來',description:'OPEN LAB 獎 NT$20,000＋AI 郵報報導，另有最佳創意獎、MixRoute 特別獎與 50 組 US$50 開發額度。',href:'/challenge/'}
   ],
   programs:[
@@ -15,8 +16,8 @@ window.OPENLAB = {
     {number:'02',tag:'WATCH',category:'try',name:'AI Demos',title:'那些「這也做得到？」的瞬間',description:'工具、Agent 工作流、影音與硬體應用，在你面前跑起來。看操作，也和團隊聊聊怎麼做到。',symbol:'▶'},
     {number:'03',tag:'TOUCH',category:'try',name:'AI Playground',support:'Powered by NVIDIA & GIGABYTE',title:'轉一道任務，帶走一個成果。',description:'輪盤抽題，跟著任務卡在志工引導下實作。影像、Agent、Coding、音樂與資安五類主題桌，等你來試。',href:'#playground',symbol:'✳'},
     {number:'04',tag:'MAKE',category:'create',name:'AI Build Challenge',support:'Supported by MixRoute & Partners',title:'把你的腦洞，做成作品。',description:'有沒有用，以後再說。網站、Agent、工作流或任何 AI 實作，帶著你的想法來參賽。',href:'/challenge/',symbol:'✎'},
-    {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by Red Bull',title:'當程式碼，變成樂器。',description:'我們正邀請音樂創作者與 Live Coder，探索即時生成的聲音與視覺。演出安排將陸續公布。',symbol:'≋'},
-    {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by Red Bull',title:'讓交流繼續發生。',description:'和講者、創作者、產品團隊與其他讀者自由交流。分享正在做的事、交換想法，也認識下一位可能一起合作的夥伴。',symbol:'↔'}
+    {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by WAT & Red Bull',title:'當程式碼，變成樂器。',description:'Hali 以即興編碼、電子音樂與生成式視覺開場，帶來 30 分鐘聲音與影像交織的現場演出。',symbol:'≋'},
+    {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by WAT & Red Bull',title:'讓交流繼續發生。',description:'和講者、創作者、產品團隊與其他讀者自由交流。分享正在做的事、交換想法，也認識下一位可能一起合作的夥伴。',symbol:'↔'}
   ],
   partners:[
     {name:'NVIDIA',category:'brand',role:'AI Playground 技術支持',description:'',logo:'logos/nvidia-rtx-spark.svg',url:'',published:true},
@@ -44,8 +45,10 @@ window.OPENLAB = {
   schedule:[
     {time:'13:00',title:'報到，讓好奇心暖身',description:'出示電子票券，熟悉場地，也和身邊的 AI 同好打個招呼。'},
     {time:'13:30',title:'聽分享、看 Demo，親手玩 AI',description:'AI Talks & Demos、Playground、讀者調查與告解牆，從新觀點到動手體驗，找到你感興趣的內容。'},
-    {time:'17:30',title:'餐食與交流，把話題繼續聊下去',description:'備有餐食、酒水與非酒精飲品。和講者、創作者、產品團隊與新朋友交換想法；AI Music & Live Coding 安排將陸續公布。'},
-    {time:'晚間',title:'AI Build Challenge 決賽與頒獎',description:'看入選團隊展示作品與操作成果，分享創作想法，一起見證獎項揭曉。'}
+    {time:'17:30',title:'Networking & Music Night 開場',description:'Hali 帶來 30 分鐘 Live Coding 聲光演出，揭開晚間節目序幕。'},
+    {time:'18:00',title:'AI Build Challenge 決賽與頒獎',description:'看入選團隊展示作品與操作成果，分享創作想法，一起見證獎項揭曉。'}
+    ,{time:'18:45',title:'DJ 音樂與自由交流',description:'和講者、創作者與新朋友交換想法，在音樂中延續現場的對話。'},
+    {time:'19:30',title:'活動結束',description:'帶著新觀點、實作靈感與新朋友，下次 OPEN LAB 見。'}
   ],
   faq:[
     {question:'沒有技術背景，也可以參加嗎？',answer:'當然可以。活動歡迎對 AI 感到好奇的人。你可以聽分享、看 Demo、體驗產品，或來認識新朋友；AI 實作挑戰賽也歡迎個人或團隊免費報名，作品形式不限。'},
@@ -54,6 +57,6 @@ window.OPENLAB = {
     {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、自由交流、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
     {question:'競賽需要另外報名嗎？',answer:'需要。AI 實作挑戰賽免費報名，請至競賽專頁登記與提交作品；購買 OPEN LAB 活動票不代表已報名競賽，競賽報名也不包含活動票。'},
     {question:'可以退票或轉讓嗎？',answer:'請依 Luma 報名頁最新票務政策辦理。報名、退票與轉讓問題可聯繫 info@aiposthub.com。'},
-    {question:'場地入口和完整節目在哪裡看？',answer:'活動地點為台北瓶蓋工廠 F 棟。報到入口、交通指引與完整節目將在本頁和 Luma 陸續更新，並通知報名者。'}
+    {question:'場地入口和完整節目在哪裡看？',answer:'活動地點為台北瓶蓋工廠 F 棟。完整節目與講者介紹請查看官網「活動議程」。報到入口與交通指引將於活動前更新。'}
   ]
 };

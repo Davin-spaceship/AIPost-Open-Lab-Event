@@ -34,7 +34,7 @@
   }
   renderPartners();
   const speakers=data.speakers.filter(s=>s.published);
-  if(!speakers.length){const n=el('div','speaker-pending');const copy=el('div');copy.append(el('strong','','各行各業的 AI 實踐者，正在加入。'),el('p','','講者與分享主題將陸續公布，敬請期待。'));n.append(copy,el('span','','↗'));$('#speaker-grid').append(n);}
+  if(!speakers.length){const n=el('div','speaker-pending');const copy=el('div');copy.append(el('strong','','講者與分享主題，完整議程一次看。'),el('p','','從產業應用到 AI 實戰，探索各場分享、講師介紹與晚間節目。'));const link=el('a','text-link','查看講者與議程 ↗');link.href='/agenda/';n.append(copy,link);$('#speaker-grid').append(n);}
   speakers.forEach(s=>{const n=el('article','speaker-card');if(s.photo){const img=el('img');img.src=s.photo;img.alt=s.name;img.loading='lazy';n.append(img);}n.append(el('h4','',s.name),el('p','',s.role),el('p','',s.topic));$('#speaker-grid').append(n);});
   data.schedule.forEach(s=>{const n=el('article');const time=el(/^\d{2}:\d{2}$/.test(s.time)?'time':'span','schedule-time',s.time);if(time.tagName==='TIME')time.dateTime=s.time;const copy=el('div');copy.append(el('h3','',s.title),el('p','',s.description));n.append(time,copy);$('#schedule').append(n);});
   data.faq.forEach(f=>{const n=el('details');n.append(el('summary','',f.question),el('p','',f.answer));$('#faq-list').append(n);});
