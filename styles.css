@@ -235,3 +235,25 @@ html.mobile-navigation-open{overflow:hidden}
  html{scroll-padding-top:145px}
 }
 @media(max-width:360px){.header>.brand{font-size:17px;gap:6px}.brand>span{font-size:10px;gap:5px}.header>.ticket-link{font-size:13px;padding:9px 10px}.header .mobile-quick-nav>a,.mobile-menu-trigger{font-size:14px}}
+
+/* Mobile hierarchy: one persistent registration action, calmer reading sizes. */
+@media(max-width:700px){
+ .header>.ticket-link,.hero-actions>.ticket-link,.hero-fine{display:none}
+ .header{padding-top:12px;min-height:0}
+ .header>.brand{margin-bottom:12px}
+ .header .mobile-quick-nav>a,.mobile-menu-trigger{font-size:.875rem;min-height:46px}
+ .hero-actions{margin-top:16px;gap:0}
+ .hero-actions>.text-link{font-size:.875rem;padding:8px 0}
+ .hero h2.hero-theme{font-size:clamp(14px,4vw,18px);line-height:1.5}
+ .hero .hero-description{font-size:.9375rem;line-height:1.85;margin-top:16px}
+ .heading-row>p,.agenda-launch-bottom p,.agenda-overview p,.program-card>p,.pg-intro-copy p,.pg-desks dd,.info-grid>div>p,.schedule p,.tickets-grid>div>p,.ticket-benefits li,.faq details p{font-size:.9375rem;line-height:1.85}
+ .heading-row h2,.information h2,.tickets h2,.faq h2{font-size:clamp(28px,8vw,36px);line-height:1.35}
+ .agenda-overview h3{font-size:1.375rem;line-height:1.5}
+ .program-card h3{font-size:1.625rem}
+ .mobile-navigation nav a{font-size:1.375rem;padding:17px 0}
+ .mobile-booking{padding:10px 20px calc(10px + env(safe-area-inset-bottom));gap:12px}
+ .mobile-booking span{font-size:.75rem;line-height:1.4}
+ .mobile-booking strong{font-size:.875rem;line-height:1.4}
+ .mobile-booking .button{font-size:.9375rem;min-height:44px;padding:10px 20px}
+ html{scroll-padding-top:112px}
+}
