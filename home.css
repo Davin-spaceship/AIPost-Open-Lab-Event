@@ -171,8 +171,8 @@
 .home-revamp #partner-grid .partner-card{height:76px;min-height:76px;padding:8px;background:#fff}
 .home-revamp #partner-grid .partner-card img{max-height:60px;max-width:100%;object-fit:contain}
 .home-revamp .partner-pending{display:none}
-.home-revamp .community-partners{padding-top:0;padding-bottom:36px;background:var(--paper);border:0}
-.home-revamp .community-partners h3{font-size:14px;font-weight:500;color:var(--muted);margin:0 0 12px}
+.home-revamp .community-partners{padding-top:28px;padding-bottom:36px;background:var(--paper);border:0}
+.home-revamp .community-partners h3{font-size:16px;font-weight:500;color:var(--muted);margin:0 0 12px}
 .home-revamp #community-partner-grid{padding:0;gap:10px}
 .home-revamp #community-partner-grid .partner-card{height:66px;min-height:66px;flex:0 1 185px;background:#fff}
 .home-revamp #community-partner-grid .partner-card img{max-height:52px;object-fit:contain}
@@ -291,7 +291,7 @@
  .home-revamp #partners{padding:32px var(--pad) 18px}.home-revamp #partners h2{font-size:25px}.home-revamp #partners .heading-row{display:flex;gap:10px;margin:20px 0 16px;align-items:baseline}.home-revamp #partners .text-link{font-size:12px;white-space:nowrap}
  .home-revamp #partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.home-revamp #partner-grid .partner-card{height:68px;min-height:68px;padding:8px}
  .home-revamp #partner-grid .partner-card img{max-height:52px;width:auto;height:auto;max-width:100%}
- .home-revamp .community-partners{padding:0 var(--pad) 28px}.home-revamp .community-partners h3{font-size:12px}
+ .home-revamp .community-partners{padding:24px var(--pad) 28px}.home-revamp .community-partners h3{font-size:12px}
  .home-revamp #community-partner-grid{gap:6px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.home-revamp #community-partner-grid .partner-card{width:100%;height:60px;min-height:60px;padding:8px}.home-revamp #community-partner-grid .partner-card img{max-width:100%;max-height:44px;width:auto;height:auto}
  .home-revamp .faq{padding:28px var(--pad)}.home-revamp .faq-grid{grid-template-columns:1fr;gap:16px;margin-top:20px}.home-revamp .faq h2{font-size:25px;max-width:none}.home-revamp .faq-grid>div>a{font-size:12px}.home-revamp .faq summary{font-size:14px;padding:15px 0}.home-revamp .faq details p{font-size:13px}
  .home-revamp .partnership-request{padding:0 var(--pad) 24px}.cooperation-details>summary{font-size:14px;gap:16px;line-height:1.8}.home-revamp .request-grid{grid-template-columns:1fr;gap:22px}
