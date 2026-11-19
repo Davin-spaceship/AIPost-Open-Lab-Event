@@ -1,0 +1,307 @@
+/* OPEN LAB 2026: concise program-led home. Shared subpage styles stay in styles.css. */
+.home-revamp{--paper:#f3f1eb;--line:#d6d7ce;--pad:max(24px,calc((100vw - 1240px)/2));font-size:16px}
+.home-revamp .section{padding:56px var(--pad)}
+.home-revamp .section-top{font-size:12px;padding-bottom:14px;line-height:1.5}
+.home-revamp .heading-row{margin:26px 0 28px;align-items:center;gap:32px}
+.home-revamp h2{font-size:clamp(30px,3.2vw,46px);line-height:1.25;letter-spacing:-.045em}
+.home-revamp .heading-row>p{font-size:15px;line-height:1.8;max-width:420px}
+.home-revamp .fine-print{font-size:12px;line-height:1.8;margin-top:16px}
+.home-revamp .mono{font-size:12px}
+.home-revamp .button{font-size:15px;padding:14px 22px;min-height:48px;justify-content:center;gap:16px}
+.home-revamp .text-link{font-size:14px;padding:7px 0;min-height:36px}
+.home-revamp .announcement-bar{padding:9px 24px;gap:20px;font-size:12px;line-height:1.5}
+.home-revamp .announcement-bar b{font-size:12px;border-bottom:1px solid}
+.home-revamp .header{height:72px;gap:24px}
+.home-revamp .header nav{gap:22px;font-size:14px}
+.home-revamp .header .button{font-size:14px;min-height:42px;padding:10px 22px}
+.home-revamp .hero{padding-top:24px}
+.home-revamp .hero-grid{grid-template-columns:1.1fr .9fr;padding:32px 0 36px;gap:40px}
+.home-revamp .hero h1{font-size:clamp(96px,10.5vw,152px)}
+.home-revamp .hero-kicker{margin-bottom:16px;font-size:14px}
+.home-revamp .hero h2.hero-theme{font-size:clamp(16px,1.55vw,22px);margin-top:24px;padding-top:18px;gap:12px}
+.home-revamp .hero-description{font-size:15px;margin-top:18px;line-height:1.8;max-width:530px}
+.home-revamp .hero-actions{margin-top:22px;gap:24px}
+.home-revamp .hero-fine{font-size:12px}
+.home-revamp .hero-art{margin:0;min-height:380px}
+.home-revamp .orbit{max-height:450px;width:115%;left:-8%}
+.home-revamp .art-sticker{right:12px;bottom:48px;padding:14px 18px;box-shadow:5px 5px 0 var(--purple)}
+.home-revamp .art-sticker strong{font-size:23px;margin:10px 0}
+.home-revamp .art-sticker .mono,.home-revamp .art-sticker>span:last-child{font-size:10px}
+.home-revamp .art-caption,.home-revamp .art-bottom{display:none}
+.home-revamp .hero-footer{padding:20px 0 22px;gap:28px}
+.home-revamp .hero-footer>div{gap:5px}
+.home-revamp .hero-footer .mono{font-size:11px}
+.home-revamp .hero-footer strong{font-size:21px}
+.home-revamp .hero-footer small{font-size:12px}
+.home-revamp .round-link{width:36px;height:36px;font-size:16px}
+/* A two-part program, followed by a compact, real lineup. */
+.home-revamp .agenda-launch{background:var(--paper)}
+.home-revamp .agenda-overview{gap:16px}
+.home-revamp .agenda-overview>a{background:#e6eadc;border:0;padding:24px 26px;display:flex;flex-direction:column;transition:background .2s}
+.home-revamp .agenda-overview>a:nth-child(2){background:#eae4f2}
+.home-revamp .agenda-overview>a:hover{background:#dce4cb}
+.home-revamp .agenda-overview>a:nth-child(2):hover{background:#dfd3ef}
+.home-revamp .agenda-overview h3{font-size:24px;line-height:1.4;margin:13px 0 10px;letter-spacing:-.035em}
+.home-revamp .agenda-overview p{font-size:15px;line-height:1.8;margin:0 0 16px}
+.home-revamp .agenda-overview strong{font-size:14px;margin-top:auto}
+.lineup-heading{display:flex;justify-content:space-between;align-items:center;margin:28px 0 8px;gap:16px}
+.lineup-heading h3{font-size:20px;letter-spacing:-.025em}
+.lineup-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 22px}
+.lineup-person{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);min-width:0}
+.lineup-person img{width:52px;height:52px;border-radius:50%;object-fit:cover;background:#e1e2da;flex-shrink:0}
+.lineup-person[href]:hover strong{color:#5a6d25}
+.lineup-person strong{font-size:14px;font-weight:700;display:block;line-height:1.5}
+.lineup-person small{display:block;font-size:12px;line-height:1.6;color:var(--muted);margin-top:3px}
+.lineup-person:nth-child(3) img{object-position:50% 15%}
+.lineup-person:nth-child(6) img{object-fit:cover;object-position:62% 50%}
+.lineup-more{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px}
+.survey-inline{display:flex;gap:22px;align-items:baseline;padding:16px 0 0;margin-top:18px;border-top:1px solid var(--line)}
+.survey-inline>.mono{color:#7653a0;white-space:nowrap}
+.survey-inline p{font-size:14px;line-height:1.8}
+/* Two specific experiences replace six repeated introductions. */
+.home-revamp .play{background:#e9ebe3}
+.experience-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:22px;align-items:start}
+.experience-feature{background:var(--paper);min-width:0;scroll-margin-top:100px}
+.experience-image{position:relative}
+.experience-image>img{display:block;width:100%;height:230px;object-fit:cover;object-position:50% 57%}
+.experience-image>span{position:absolute;bottom:12px;left:16px;background:#111210dc;color:#fff;font-size:11px;padding:5px 8px}
+.experience-copy{padding:24px 26px}
+.experience-copy>.mono{color:#5c6a3a}
+.experience-copy h3,.experience-night h3{font-size:25px;line-height:1.4;letter-spacing:-.035em;margin:10px 0 12px}
+.experience-copy>p,.experience-night>p{font-size:15px;line-height:1.8}
+.experience-support{font-size:12px!important;margin-top:16px;color:var(--muted)}
+.experience-support strong{color:inherit}
+.experience-night{padding:26px 28px;background:#191c17;color:var(--paper);min-height:100%}
+.night-portraits{display:flex;gap:12px;margin-bottom:23px}
+.night-portraits img{width:calc(50% - 6px);height:156px;object-fit:cover;object-position:50% 32%}
+.experience-night>.mono{color:#c3a4f4}
+.experience-night>p{color:#c6ccbc}
+.experience-night .text-link{color:var(--lime);margin-top:18px}
+.playground-details{margin-top:18px;border-top:1px solid var(--line)}
+.playground-details summary{padding:14px 0 0;min-height:44px;display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:700;cursor:pointer}
+.playground-details summary:after{content:'+';font-size:22px}
+.playground-details[open] summary:after{content:'−'}
+.playground-details .pg-desks{margin:20px 0 0}
+.playground-details .pg-desks h3,.playground-details .pg-journey h3{font-size:19px;margin:16px 0 10px}
+.playground-details .pg-desks>p{font-size:14px;color:var(--muted);margin:0}
+.playground-details .pg-desks dl{margin:14px 0}
+.playground-details .pg-desks dl>div{display:block;border-color:var(--line);padding:12px 0}
+.playground-details .pg-desks dt{font-size:15px;margin-bottom:5px}
+.playground-details .pg-desks dt span{font-size:12px;margin-right:12px;color:#667a2c}
+.playground-details .pg-desks dd{font-size:14px;color:var(--muted)}
+.playground-details .pg-journey{margin-top:20px;padding:0;border:0}
+.playground-details .pg-journey ol{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0;list-style:none}
+.playground-details .pg-journey li{padding:12px;background:#e9ebe3;border:0}
+.playground-details .pg-journey b{font-size:13px;display:block;color:var(--ink)}
+.playground-details .pg-journey span{font-size:12px;color:var(--muted)}
+/* The competition is a focused invitation, with the full rules on its own page. */
+.home-revamp .challenges{padding-top:48px;padding-bottom:40px}
+.challenge-compact{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.challenge-pitch>.mono{color:var(--lime)}
+.challenge-pitch h2{margin:18px 0;font-size:clamp(32px,3.5vw,50px)}
+.challenge-pitch>p{font-size:15px;line-height:1.85;color:#bbc2af;max-width:500px}
+.home-revamp .challenge-links{margin-top:24px;gap:22px}
+.challenge-rewards{border-left:1px solid #424a38;padding-left:40px}
+.challenge-rewards>.mono{font-size:11px;color:#9da88b}
+.main-reward{padding:16px 0 20px}
+.main-reward>span{font-size:14px;color:var(--lime);display:block}
+.main-reward>strong{font:600 clamp(34px,3.6vw,52px)/1.3 var(--mono);display:block;letter-spacing:-.04em;margin:7px 0}
+.main-reward p{font-size:13px;color:#bbc2af}
+.reward-row{padding:14px 0;border-top:1px solid #424a38;display:flex;flex-direction:column;gap:6px}
+.reward-row strong{font-size:14px;color:var(--lime)}
+.reward-row span{font-size:13px;color:#c7cebc;line-height:1.7}
+.home-revamp .challenge-dates{margin-top:30px;padding-top:20px;border-top:1px solid #424a38;gap:24px;display:grid;grid-template-columns:repeat(3,1fr)}
+.home-revamp .challenge-dates p{font-size:13px;display:flex;align-items:baseline;gap:14px;line-height:1.6}
+.home-revamp .challenge-dates span{font:500 20px var(--mono);color:var(--lime);display:inline;margin:0}
+/* Place and ticket form a single practical destination. */
+.home-revamp #info{display:grid;grid-template-columns:1fr 1.5fr;gap:30px 36px;padding-top:48px;padding-bottom:48px;background:#20251d}
+.home-revamp #info>.section-top{grid-column:1/-1;margin:0}
+.home-revamp #info .info-grid{display:block;margin:0}
+.home-revamp .info-place{padding:0;border:0;background:none}
+.home-revamp .visit-title{font-size:28px;margin:0 0 22px}
+.home-revamp .info-date{padding-bottom:18px;gap:18px}
+.home-revamp .info-date>strong{font-size:64px}
+.home-revamp .info-date>div{font-size:12px}
+.home-revamp .info-date b{font-size:12px}
+.home-revamp .info-star{display:none}
+.home-revamp .info-key-times{padding:18px 0}
+.home-revamp .info-key-times span{font-size:13px}
+.home-revamp .info-key-times strong{font-size:25px}
+.home-revamp #info .venue{margin-top:18px}
+.home-revamp #info .venue>.mono{font-size:11px}
+.home-revamp #info .venue h3{font-size:24px}
+.home-revamp #info .venue p,.home-revamp #info .venue .text-link{font-size:14px}
+.home-revamp .info-checkin{margin-top:20px;padding-top:16px}
+.home-revamp .info-checkin>.mono{font-size:12px}
+.home-revamp .info-checkin p{font-size:13px;line-height:1.8}
+.home-revamp #tickets{background:none;padding:0;color:var(--paper);min-width:0}
+.home-revamp .tickets-grid{margin:0;grid-template-columns:1fr .95fr;gap:24px;align-items:start}
+.home-revamp .ticket-title{font-size:21px;line-height:1.5;margin:0 0 14px;letter-spacing:-.03em}
+.home-revamp .tickets-grid>div>p{font-size:14px;color:#c6cebb;line-height:1.8}
+.home-revamp .ticket-phases{margin:16px 0;padding:0;border:0;display:block}
+.home-revamp .ticket-phases p{padding:10px 0;border-top:1px solid #48533d;display:flex;flex-direction:column;gap:3px}
+.home-revamp .ticket-phases strong{font-size:14px;color:var(--paper)}
+.home-revamp .ticket-phases span{font-size:12px;color:#b1bda1}
+.home-revamp .ticket-phases p:first-child{opacity:.55}
+.home-revamp .ticket-benefits{margin:18px 0;padding:0;list-style:none}
+.home-revamp .ticket-benefits li{padding:4px 0;font-size:13px;border:0;line-height:1.7;color:#d4dbc8}
+.home-revamp .ticket-benefits li:before{content:'・';color:var(--lime);margin-right:4px}
+.home-revamp #tickets .fine-print{font-size:12px;color:#a5b197}
+.home-revamp .ticket-pass{transform:none;box-shadow:none;padding:22px;color:var(--ink);margin:0;max-width:none;background:#d0f547;border:0}
+.home-revamp .ticket-pass .mono{font-size:10px;line-height:1.7}
+.home-revamp .pass-top{gap:12px}
+.home-revamp .pass-price{margin:18px 0 10px}
+.home-revamp .pass-price strong{font-size:72px}
+.home-revamp .pass-price>span{font-size:17px}
+.home-revamp .pass-price svg{width:44px;height:44px}
+.home-revamp #tickets .price-next{font-size:11px;color:#36451b}
+.home-revamp .pass-perforation{margin:18px -22px;border-color:#6d812f}
+.home-revamp .pass-meta{gap:12px;display:grid;grid-template-columns:1fr 1fr;margin:0 0 18px}
+.home-revamp .pass-meta div:last-child{grid-column:1/-1}
+.home-revamp .pass-meta span{font-size:10px;color:#465522}
+.home-revamp .pass-meta strong{font-size:13px}
+.home-revamp .ticket-pass .button{width:100%}
+.home-revamp #tickets .booking-note{font-size:11px;line-height:1.8;color:#384621;margin-top:14px}
+.home-revamp .barcode{height:22px;margin-top:16px;opacity:.7}
+/* Partner acknowledgements and practical questions, without empty introductions. */
+.home-revamp #partners{padding-bottom:20px;padding-top:40px}
+.home-revamp #partners .heading-row{margin:20px 0}
+.home-revamp #partners h2{font-size:28px}
+.home-revamp #partner-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.home-revamp #partner-grid .partner-card{height:76px;min-height:76px;padding:8px;background:#fff}
+.home-revamp #partner-grid .partner-card img{max-height:60px;max-width:100%;object-fit:contain}
+.home-revamp .partner-pending{display:none}
+.home-revamp .community-partners{padding-top:0;padding-bottom:36px;background:var(--paper);border:0}
+.home-revamp .community-partners h3{font-size:14px;font-weight:500;color:var(--muted);margin:0 0 12px}
+.home-revamp #community-partner-grid{padding:0;gap:10px}
+.home-revamp #community-partner-grid .partner-card{height:66px;min-height:66px;flex:0 1 185px;background:#fff}
+.home-revamp #community-partner-grid .partner-card img{max-height:52px;object-fit:contain}
+.home-revamp .faq{padding-top:32px;padding-bottom:32px;border-top:1px solid var(--line)}
+.home-revamp .faq-grid{margin-top:24px;gap:48px;grid-template-columns:.55fr 1fr}
+.home-revamp .faq h2{font-size:28px;line-height:1.4;max-width:280px;margin-bottom:12px}
+.home-revamp .faq summary{font-size:15px;padding:17px 0;line-height:1.7;min-height:50px}
+.home-revamp .faq details p{font-size:14px;line-height:1.9;padding-bottom:18px}
+.home-revamp .faq-grid>div>a{font-size:14px}
+.home-revamp .partnership-request{padding-top:0;padding-bottom:32px}
+.cooperation-details{border-top:1px solid var(--line)}
+.cooperation-details>summary{display:flex;justify-content:space-between;cursor:pointer;font-size:15px;font-weight:600;padding:20px 0;min-height:48px}
+.cooperation-details>summary:after{content:'+';font-size:22px}
+.cooperation-details[open]>summary:after{content:'−'}
+.home-revamp .request-grid{margin-top:12px;gap:40px}
+.home-revamp .request-grid h2{font-size:28px}
+.home-revamp .request-grid>div>p{font-size:14px}
+.home-revamp .request-grid label{font-size:14px}
+.home-revamp .request-grid input,.home-revamp .request-grid textarea{font-size:16px}
+.home-revamp .footer{padding:36px var(--pad) 24px;gap:24px}
+.home-revamp .footer-logo{font-size:30px}
+.home-revamp .footer-bottom{margin-top:24px;font-size:12px}
+.home-revamp .footer-links{font-size:14px;gap:14px}
+.home-revamp .dj-toggle{width:190px;min-height:46px;border-radius:4px;padding:8px 12px}
+.home-revamp .dj-toggle .dj-face{font-size:18px}
+.home-revamp .dj-toggle .dj-indicator,.home-revamp .dj-toggle .dj-live{display:none}
+.home-revamp .dj-toggle>span:nth-child(2){font-size:11px}
+.home-revamp .reveal-ready{opacity:1;transform:none;transition:none}
+@media(min-width:1600px){.home-revamp{--pad:calc((100vw - 1280px)/2)}}
+@media(max-width:1150px){
+ .home-revamp{--pad:32px}.home-revamp .header nav{gap:15px;font-size:12px}.home-revamp .brand{gap:10px}
+ .home-revamp #info{grid-template-columns:1fr 1.6fr;gap:26px}.home-revamp .tickets-grid{gap:18px}
+ .home-revamp #partner-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .lineup-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 14px}.lineup-person img{width:44px;height:44px}.lineup-person{gap:8px}
+}
+@media(max-width:1000px){
+ .home-revamp .header{height:auto;padding-top:12px}.home-revamp .header>.brand{margin-bottom:12px}
+ .home-revamp .header>.mobile-quick-nav{gap:0;font-size:14px}.home-revamp .header>.ticket-link{margin-bottom:12px}
+ .home-revamp .header .mobile-quick-nav a{font-size:14px}
+ .home-revamp .hero-grid{gap:24px}.home-revamp .hero h1{font-size:120px}.home-revamp .hero-art{min-height:360px}
+ .home-revamp .hero h2.hero-theme{font-size:17px;gap:8px}
+ .home-revamp #info{grid-template-columns:1fr}.home-revamp #info .info-grid{grid-row:auto}
+ .home-revamp .info-place{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.home-revamp .visit-title{grid-column:1/-1}
+ .home-revamp .info-date{grid-column:1}.home-revamp .info-key-times{grid-column:1}.home-revamp #info .venue{grid-column:2;grid-row:2/4;margin:0}
+ .home-revamp .info-checkin{grid-column:1/-1}.home-revamp #tickets{border-top:1px solid #48533d;padding-top:28px}
+ .home-revamp .tickets-grid{grid-template-columns:1fr 1fr;gap:32px}
+ .lineup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lineup-person img{width:48px;height:48px}
+}
+@media(max-width:700px){
+ .home-revamp{--pad:22px}
+ .home-revamp .section{padding:36px var(--pad)}
+ .home-revamp .section-top{font-size:10px;gap:14px;align-items:baseline;padding-bottom:12px}
+ .home-revamp .section-top>span:last-child{text-align:right}
+ .home-revamp .heading-row{display:block;margin:22px 0}
+ .home-revamp h2{font-size:32px}
+ .home-revamp .heading-row>p{font-size:14px;line-height:1.75;margin-top:12px}
+ .home-revamp .heading-row>p br{display:none}
+ .home-revamp .announcement-bar{padding:8px 16px;font-size:10px;gap:10px}
+ .home-revamp .announcement-bar>span{display:none}.home-revamp .announcement-bar b{font-size:10px}
+ .home-revamp .header{gap:0 10px}.home-revamp .header>.ticket-link{display:none}
+ .home-revamp .brand{font-size:18px}.home-revamp .brand>span{font-size:11px}
+ .home-revamp .header .mobile-quick-nav a,.home-revamp .mobile-menu-trigger{font-size:13px;min-height:44px}
+ .home-revamp .hero{padding-top:22px}
+ .home-revamp .hero-top{font-size:9px}.home-revamp .hero-top span:last-child{display:none}
+ .home-revamp .hero-grid{display:block;padding:24px 0 22px}
+ .home-revamp .hero-kicker{margin-bottom:18px;font-size:12px}
+ .home-revamp .hero h1{font-size:clamp(100px,25vw,148px)}
+ .home-revamp .hero h1 svg{width:58px;height:58px}.home-revamp .hero h1 sup{font-size:19px}
+ .home-revamp .hero h2.hero-theme{font-size:clamp(14px,3.8vw,19px);padding-top:18px;margin-top:22px;gap:10px}
+ .home-revamp .hero-description{font-size:14px;margin-top:16px;max-width:460px}
+ .home-revamp .hero-description br{display:none}
+ .home-revamp .hero-art{display:none}
+ .home-revamp .hero-actions{margin-top:14px}
+ .home-revamp .hero-actions .text-link{font-size:14px}
+ .home-revamp .hero-footer{grid-template-columns:1fr 1.5fr;gap:16px;padding:18px 0 22px}
+ .home-revamp .hero-footer strong{font-size:18px}.home-revamp .hero-footer .mono{font-size:10px}
+ .home-revamp .hero-footer>div:nth-child(3){flex-direction:row;align-items:center;grid-column:1/-1;gap:16px;padding-top:12px;border-top:1px solid #ffffff20}
+ .home-revamp .hero-footer>div:nth-child(3) strong{font-size:15px}
+ .home-revamp .hero-footer .round-link{display:none}
+ .home-revamp .agenda-overview{grid-template-columns:1fr;gap:12px}
+ .home-revamp .agenda-overview>a{padding:21px}
+ .home-revamp .agenda-overview .mono{font-size:10px}
+ .home-revamp .agenda-overview h3{font-size:21px;margin:10px 0}
+ .home-revamp .agenda-overview p{font-size:14px;line-height:1.8;margin-bottom:12px}
+ .home-revamp .agenda-overview strong{font-size:13px}
+ .lineup-heading{margin:24px 0 6px;align-items:baseline;gap:8px}.lineup-heading h3{font-size:17px}.lineup-heading .text-link{font-size:12px;white-space:nowrap}
+ .lineup-grid{gap:0 12px}.lineup-person{padding:12px 0;gap:8px;align-items:start}
+ .lineup-person img{width:36px;height:36px}.lineup-person strong{font-size:12px}.lineup-person small{font-size:10px;line-height:1.6}
+ .lineup-more{font-size:12px;margin-top:12px}.survey-inline{gap:12px;margin-top:14px;padding-top:14px;display:block}.survey-inline>.mono{font-size:10px}.survey-inline p{font-size:13px;margin-top:6px}
+ .home-revamp .fine-print{font-size:11px;line-height:1.85}
+ .experience-grid{grid-template-columns:1fr;gap:16px}.experience-image>img{height:190px}
+ .experience-copy{padding:20px}.experience-copy h3,.experience-night h3{font-size:23px;margin:10px 0}
+ .experience-copy>p,.experience-night>p{font-size:14px;line-height:1.8}
+ .experience-night{padding:22px}.night-portraits{float:right;width:120px;gap:6px;margin:0 0 12px 14px}.night-portraits img{width:57px;height:84px}
+ .experience-night>.mono{font-size:10px}.experience-night h3{font-size:24px}.experience-night>p{clear:both}
+ .experience-night .text-link{margin-top:12px}
+ .home-revamp .challenges{padding:36px var(--pad)}
+ .challenge-compact{grid-template-columns:1fr;gap:24px}.challenge-pitch h2{font-size:36px;margin:14px 0}.challenge-pitch>p{font-size:14px}
+ .challenge-pitch>.mono{font-size:11px}.home-revamp .challenge-links{margin-top:20px;gap:20px;flex-wrap:wrap}
+ .challenge-rewards{border-left:0;border-top:1px solid #424a38;padding:22px 0 0}
+ .main-reward{padding:12px 0 16px}.main-reward>strong{font-size:38px}.main-reward p{font-size:12px}.reward-row{padding:12px 0}
+ .home-revamp .challenge-dates{gap:12px;margin-top:22px;padding-top:18px}.home-revamp .challenge-dates p{flex-direction:column;gap:6px;font-size:11px}.home-revamp .challenge-dates span{font-size:20px}
+ .home-revamp #info{padding:36px var(--pad);gap:24px}
+ .home-revamp .info-place{display:block}.home-revamp .visit-title{font-size:26px;margin-bottom:20px}
+ .home-revamp .info-date>strong{font-size:56px}.home-revamp .info-key-times{gap:22px}
+ .home-revamp #info .venue{margin-top:20px}.home-revamp #info .venue h3{font-size:23px}
+ .home-revamp #info .venue p,.home-revamp #info .venue .text-link{font-size:13px}
+ .home-revamp #tickets{padding:24px 0 0}.home-revamp .tickets-grid{display:flex;flex-direction:column;gap:22px}
+ .home-revamp .tickets-grid>div{width:100%}
+ .home-revamp .ticket-title{font-size:23px}.home-revamp .ticket-phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+ .home-revamp .ticket-phases strong{font-size:12px}.home-revamp .ticket-phases span{font-size:10px}.home-revamp .ticket-benefits{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+ .home-revamp .ticket-benefits li{font-size:12px}
+ .home-revamp .ticket-pass{padding:24px}.home-revamp .pass-price strong{font-size:80px}.home-revamp .pass-perforation{margin:18px -24px}
+ .home-revamp .pass-meta{grid-template-columns:1fr 1fr 1.2fr}.home-revamp .pass-meta div:last-child{grid-column:auto}.home-revamp .pass-meta strong{font-size:12px}
+ .home-revamp .ticket-pass .mono{font-size:11px}
+ .home-revamp #partners{padding:32px var(--pad) 18px}.home-revamp #partners h2{font-size:25px}.home-revamp #partners .heading-row{display:flex;gap:10px;margin:20px 0 16px;align-items:baseline}.home-revamp #partners .text-link{font-size:12px;white-space:nowrap}
+ .home-revamp #partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.home-revamp #partner-grid .partner-card{height:68px;min-height:68px;padding:8px}
+ .home-revamp #partner-grid .partner-card img{max-height:52px;width:auto;height:auto;max-width:100%}
+ .home-revamp .community-partners{padding:0 var(--pad) 28px}.home-revamp .community-partners h3{font-size:12px}
+ .home-revamp #community-partner-grid{gap:6px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.home-revamp #community-partner-grid .partner-card{width:100%;height:60px;min-height:60px;padding:8px}.home-revamp #community-partner-grid .partner-card img{max-width:100%;max-height:44px;width:auto;height:auto}
+ .home-revamp .faq{padding:28px var(--pad)}.home-revamp .faq-grid{grid-template-columns:1fr;gap:16px;margin-top:20px}.home-revamp .faq h2{font-size:25px;max-width:none}.home-revamp .faq-grid>div>a{font-size:12px}.home-revamp .faq summary{font-size:14px;padding:15px 0}.home-revamp .faq details p{font-size:13px}
+ .home-revamp .partnership-request{padding:0 var(--pad) 24px}.cooperation-details>summary{font-size:14px;gap:16px;line-height:1.8}.home-revamp .request-grid{grid-template-columns:1fr;gap:22px}
+ .home-revamp .footer{padding:28px var(--pad) 22px}.home-revamp .footer-links{font-size:13px;gap:14px}.home-revamp .footer-bottom{font-size:11px;line-height:1.8}
+ .home-revamp .dj-toggle{width:148px;max-width:148px;min-height:40px;padding:7px 10px}.home-revamp .dj-toggle .dj-face{font-size:15px}.home-revamp .dj-toggle>span:nth-child(2){font-size:9px}
+ .home-revamp .mobile-booking .button{min-height:44px;padding:10px 22px;font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.home-revamp *{scroll-behavior:auto;animation:none;transition:none}}
+.home-revamp .hero-footer{grid-template-columns:1fr 1.5fr 1.4fr 1fr}.anchor-alias{display:block;scroll-margin-top:110px}
+@media(max-width:700px){.home-revamp .hero-footer{grid-template-columns:1fr 1.5fr}.home-revamp .hero-footer .hero-end{display:none}}
+.home-revamp .mobile-navigation-heading h2{font:700 18px var(--mono);letter-spacing:0;line-height:1.5}
+@media(max-width:360px){.home-revamp{--pad:18px}.home-revamp .lineup-person{gap:6px}.home-revamp .lineup-person img{width:30px;height:30px}.home-revamp .lineup-person strong{font-size:11px}}
+.home-revamp .anchor-alias{position:absolute;width:0;height:0;pointer-events:none}

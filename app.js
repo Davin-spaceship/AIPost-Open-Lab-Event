@@ -4,39 +4,12 @@
   const $=(s)=>document.querySelector(s);
   const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
   const validUrl=(url)=>{if(!url)return '';try{const u=new URL(url,location.href);return ['http:','https:'].includes(u.protocol)?u.href:'';}catch{return '';}};
-  data.announcements.forEach(a=>{
-    const n=el('a','update');n.href=a.href;n.dataset.label=a.label;n.append(el('span','mono',a.label));const copy=el('div');copy.append(el('h3','',a.title),el('p','',a.description));n.append(copy,el('span','update-arrow','↗'));$('#updates-list').append(n);
-  });
-  // Draw program artwork as vectors so mobile fonts cannot substitute emoji.
-  const programArtwork = {
-    LISTEN: '<path d="M14 50 50 14M18 14h32v32"/>',
-    WATCH: '<path d="M23 12 53 32 23 52Z" fill="currentColor" stroke="none"/>',
-    TOUCH: '<path d="M32 6v52M6 32h52M14 14l36 36M14 50l36-36"/>',
-    MAKE: '<path d="m14 43-3 12 12-3 31-31-9-9Z M38 19l9 9 M14 43l9 9"/>',
-    FEEL: '<path d="M5 20c9-17 18 17 27 0s18 17 27 0M5 32c9-17 18 17 27 0s18 17 27 0M5 44c9-17 18 17 27 0s18 17 27 0"/>',
-    CONNECT: '<path d="M6 32h52M18 20 6 32l12 12M46 20l12 12-12 12"/>'
-  };
-  data.programs.forEach(p=>{
-    const n=el('article','program-card');n.dataset.category=p.category;n.dataset.program=p.tag.toLowerCase();const top=el('div','card-top');top.append(el('span','',p.number),el('span','',p.tag));const symbol=el('span','card-symbol');symbol.innerHTML='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter" focusable="false" aria-hidden="true">'+programArtwork[p.tag]+'</svg>';symbol.setAttribute('aria-hidden','true');n.append(top,symbol,el('h3','',p.name),el('p','program-title',p.title),el('p','',p.description));if(p.support)n.append(el('p','program-support',p.support));if(p.href){const more=el('a','text-link',p.href==='/challenge/'?'競賽專頁與報名 ↗':'看看體驗內容 ↓');more.href=p.href;n.append(more);}$('#program-grid').append(n);
-  });
-  document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
-    document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
-    document.querySelectorAll('.program-card').forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter;});
-  }));
-  data.challenges.forEach(c=>{
-    const n=el('article','challenge-card');n.append(el('span','mono',c.name),el('span','challenge-icon','✳'),el('h3','',c.title),el('p','',c.description));const list=el('ul');c.examples.forEach(x=>list.append(el('li','',x)));n.append(list,el('p','fine-print',c.note));
-    const url=validUrl(c.rulesUrl);const state=el(c.open&&url?'a':'div','challenge-status');if(c.open&&url){state.href=url;if(new URL(url).origin!==location.origin){state.target='_blank';state.rel='noopener';}}const label=el('span');label.append(el('i'),el('span','',c.status));state.append(label,el('span','',c.open&&url?'↗':'COMING SOON'));n.append(state);$('#challenge-grid').append(n);
-  });
   function renderPartners() {
     const grid=$('#partner-grid'),communityGrid=$('#community-partner-grid');grid.replaceChildren();communityGrid.replaceChildren();const items=data.partners.filter(p=>p.published);
     items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';n.append(img);}else n.append(el('strong','partner-name',p.name));(p.category==='community'?communityGrid:grid).append(n);});
-    const pending=el('div','partner-pending');pending.append(el('strong','','更多夥伴，陸續加入。'),el('span','mono','MORE TO COME'));grid.append(pending);
+
   }
   renderPartners();
-  const speakers=data.speakers.filter(s=>s.published);
-  if(!speakers.length){const n=el('div','speaker-pending');const copy=el('div');copy.append(el('strong','','講者與分享主題，完整議程一次看。'),el('p','','從產業應用到 AI 實戰，探索各場分享、講師介紹與晚間節目。'));const link=el('a','text-link','查看講者與議程 ↗');link.href='/agenda/';n.append(copy,link);$('#speaker-grid').append(n);}
-  speakers.forEach(s=>{const n=el('article','speaker-card');if(s.photo){const img=el('img');img.src=s.photo;img.alt=s.name;img.loading='lazy';n.append(img);}n.append(el('h4','',s.name),el('p','',s.role),el('p','',s.topic));$('#speaker-grid').append(n);});
-  data.schedule.forEach(s=>{const n=el('article');const time=el(/^\d{2}:\d{2}$/.test(s.time)?'time':'span','schedule-time',s.time);if(time.tagName==='TIME')time.dateTime=s.time;const copy=el('div');copy.append(el('h3','',s.title),el('p','',s.description));n.append(time,copy);$('#schedule').append(n);});
   data.faq.forEach(f=>{const n=el('details');n.append(el('summary','',f.question),el('p','',f.answer));$('#faq-list').append(n);});
   function ticketPhase(now=Date.now()){
     if(now<Date.parse(data.event.earlyDeadline))return {name:'早鳥票',short:'早鳥',label:'EARLY BIRD / 早鳥票',price:data.event.earlyPrice};
@@ -52,11 +25,10 @@
     $('.early-note').textContent=phase.price===data.event.earlyPrice?`早鳥至 ${data.event.earlyLabel} · 一票參與整場`:'一票參與整場 · 票券供應依 Luma 即時資訊為準';
     document.querySelectorAll('.ticket-link').forEach(a=>{
       a.href=data.event.registration;
-      if(a.closest('.hero-actions'))a.innerHTML=`NT$${phase.price.toLocaleString('en-US')} · 先把位置留好 <span>↗</span>`;
-      else if(!a.closest('.mobile-booking'))a.innerHTML=`${phase.price===data.event.earlyPrice?'取得早鳥票':'前往報名'} <span>↗</span>`;
+      if(a.closest('.hero-actions'))a.innerHTML=`NT$${phase.price.toLocaleString('en-US')} · 先把位置留好`;
+      else if(!a.closest('.mobile-booking'))a.innerHTML=`${phase.price===data.event.earlyPrice?'取得早鳥票':'前往報名'}`;
     });
   }
-  const invite=$('.partner-invite p');invite.textContent=invite.textContent.replace('带','帶');
   const syncAnnouncement=()=>{const phase=ticketPhase();if(phase.price!==data.event.earlyPrice){const n=document.querySelector('.update[data-label="EARLY BIRD"]');if(n){n.querySelector('.mono').textContent='TICKETS';n.querySelector('h3').textContent=phase.name+'開放中，12/5 現場見';n.querySelector('p').textContent=`${phase.name} NT$${phase.price.toLocaleString('en-US')}，一票參與整場。票券供應依 Luma 即時資訊為準。`;}}};
   updateTickets();syncAnnouncement();setInterval(()=>{updateTickets();syncAnnouncement();},60000);
   const requestForm=$('#partnership-form');
@@ -96,4 +68,15 @@
  dialog.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',close));
  dialog.addEventListener('close',()=>{trigger.setAttribute('aria-expanded','false');document.documentElement.classList.remove('mobile-navigation-open');trigger.focus({preventScroll:true});});
  matchMedia('(min-width:1001px)').addEventListener('change',event=>{if(event.matches&&dialog.open)close();});
+})();
+
+// Deep links keep useful details discoverable after the homepage consolidation.
+(()=>{
+ const revealTarget=()=>{
+  const id=decodeURIComponent(location.hash.slice(1));if(!id)return;
+  const target=document.getElementById(id);if(!target)return;
+  const disclosure=target.closest('details')||(id==='partnership-request'?target.querySelector('details'):null);
+  if(disclosure)disclosure.open=true;
+ };
+ addEventListener('hashchange',revealTarget);revealTarget();
 })();

@@ -16,7 +16,7 @@ window.OPENLAB = {
     {number:'02',tag:'WATCH',category:'try',name:'AI Demos',title:'那些「這也做得到？」的瞬間',description:'工具、Agent 工作流、影音與硬體應用，在你面前跑起來。看操作，也和團隊聊聊怎麼做到。',symbol:'▶'},
     {number:'03',tag:'TOUCH',category:'try',name:'AI Playground',support:'Powered by NVIDIA & GIGABYTE',title:'轉一道任務，帶走一個成果。',description:'輪盤抽題，跟著任務卡在志工引導下實作。影像、Agent、Coding、音樂與資安五類主題桌，等你來試。',href:'#playground',symbol:'✳'},
     {number:'04',tag:'MAKE',category:'create',name:'AI Build Challenge',support:'Supported by MixRoute & Partners',title:'把你的腦洞，做成作品。',description:'有沒有用，以後再說。網站、Agent、工作流或任何 AI 實作，帶著你的想法來參賽。',href:'/challenge/',symbol:'✎'},
-    {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by WAT & Red Bull',title:'當程式碼，變成樂器。',description:'晚間先由小律 GreenTed 分享音樂製作與 AI 協作經驗，再由 Hali 帶來 30 分鐘 Live Coding 聲光演出。',symbol:'≋'},
+    {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by WAT & Red Bull',title:'當程式碼，變成樂器。',description:'晚間先由小律 GreenTed 分享音樂製作與 AI 協作經驗，再由 Hali 帶來 Live Coding 聲光演出。',symbol:'≋'},
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by WAT & Red Bull',title:'讓交流繼續發生。',description:'和講者、創作者、產品團隊與其他讀者自由交流。分享正在做的事、交換想法，也認識下一位可能一起合作的夥伴。',symbol:'↔'}
   ],
   partners:[
