@@ -78,9 +78,9 @@
 .hero .hero-description{margin-top:18px;line-height:1.9;max-width:390px}
 @media(max-width:600px){.hero .hero-kicker{font-size:15px;gap:12px;margin-bottom:22px}.hero-city{font-size:9px;padding-left:12px}.hero h2.hero-theme{font-size:clamp(14px,4vw,19px);gap:10px;margin-top:26px;padding-top:18px}.hero .hero-description{font-size:12px;max-width:330px;margin-top:15px}}
 
-/* Preserve the proportions of the official GAIA logo. */
-:is(#partner-grid,#community-partner-grid) img[alt="GAIA"]{width:100px;height:72px}
-@media(max-width:800px){:is(#partner-grid,#community-partner-grid) img[alt="GAIA"]{width:86px;height:62px}}
+/* Preserve the proportions of the official Netron 網創 logo. */
+:is(#partner-grid,#community-partner-grid) img[alt="Netron 網創"]{width:100px;height:72px}
+@media(max-width:800px){:is(#partner-grid,#community-partner-grid) img[alt="Netron 網創"]{width:86px;height:62px}}
 
 /* Clearer partner-first hierarchy and a compact activity field. */
 #partners{padding-top:44px;padding-bottom:40px;background:#e9e8df;border-bottom:1px solid var(--line)}
@@ -89,7 +89,7 @@
 :is(#partner-grid,#community-partner-grid){padding:12px 0;gap:8px 20px}
 :is(#partner-grid,#community-partner-grid) .partner-card{background:transparent;border:0;min-height:86px;border-radius:0;padding:16px}
 :is(#partner-grid,#community-partner-grid) a.partner-card:hover{background:transparent;opacity:.75}
-:is(#partner-grid,#community-partner-grid) img[alt="GAIA"]{width:174px;height:48px;mix-blend-mode:multiply}
+:is(#partner-grid,#community-partner-grid) img[alt="Netron 網創"]{width:174px;height:48px;mix-blend-mode:multiply}
 :is(#partner-grid,#community-partner-grid) img[alt="twin3.ai"]{width:124px;height:42px}
 :is(#partner-grid,#community-partner-grid) .partner-pending{min-height:86px;padding:14px;font-size:11px}
 .play{position:relative;background-color:#f2f0e8;background-image:radial-gradient(#11121016 .8px,transparent .8px);background-size:18px 18px}
@@ -109,7 +109,7 @@
 .play .program-card>p{font-size:12px;line-height:1.8;max-width:none}.play .program-card .program-title{font-size:14px;font-weight:700;margin-bottom:8px}.play .program-card .program-support{font-size:10px;margin-top:14px;padding-top:12px;border-top:1px solid #11121020}.play .program-card .text-link{align-self:flex-start;margin-top:12px;font-size:12px}
 .play .program-card[hidden]{display:none}
 @media(max-width:1000px){:is(#partner-grid,#community-partner-grid){grid-template-columns:repeat(3,minmax(0,1fr))}.play .program-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){#partners{padding-top:32px;padding-bottom:30px}#partners .heading-row{display:block}#partners .heading-row p{margin-top:10px}:is(#partner-grid,#community-partner-grid){grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}:is(#partner-grid,#community-partner-grid) .partner-card{padding:12px;min-height:78px}:is(#partner-grid,#community-partner-grid) img[alt="GAIA"]{width:146px;height:42px}.play-guide{padding:16px;gap:14px}.play-guide>.mono{font-size:9px;max-width:75px}.play-guide p{font-size:11px}.guide-mark{font-size:34px}.play .filters button{font-size:11px;padding:9px 13px}.play .program-grid{grid-template-columns:1fr}.play .program-card{padding:20px}.play .card-symbol{height:88px;font-size:54px}.play .heading-row p{font-size:13px}}
+@media(max-width:600px){#partners{padding-top:32px;padding-bottom:30px}#partners .heading-row{display:block}#partners .heading-row p{margin-top:10px}:is(#partner-grid,#community-partner-grid){grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}:is(#partner-grid,#community-partner-grid) .partner-card{padding:12px;min-height:78px}:is(#partner-grid,#community-partner-grid) img[alt="Netron 網創"]{width:146px;height:42px}.play-guide{padding:16px;gap:14px}.play-guide>.mono{font-size:9px;max-width:75px}.play-guide p{font-size:11px}.guide-mark{font-size:34px}.play .filters button{font-size:11px;padding:9px 13px}.play .program-grid{grid-template-columns:1fr}.play .program-card{padding:20px}.play .card-symbol{height:88px;font-size:54px}.play .heading-row p{font-size:13px}}
 @media(min-width:801px){.play{padding-top:64px;padding-bottom:64px}.play .heading-row h2 br{display:none}.play .heading-row h2{font-size:clamp(36px,4vw,58px)}.play .heading-row{gap:32px}.play .heading-row p{font-size:13px}}
 
 /* Event essentials: date and venue alongside a readable day timeline. */
@@ -177,7 +177,7 @@
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="WAT"]{--partner-width:104px;--partner-height:42px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="Red Bull"]{--partner-width:82px;--partner-height:46px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="MixRoute"]{--partner-width:126px;--partner-height:40px;width:var(--partner-width);height:var(--partner-height);max-height:none}
-:is(#partner-grid,#community-partner-grid) .partner-card img[alt="GAIA"]{--partner-width:154px;--partner-height:44px;width:var(--partner-width);height:var(--partner-height);max-height:none}
+:is(#partner-grid,#community-partner-grid) .partner-card img[alt="Netron 網創"]{--partner-width:154px;--partner-height:44px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="KDAN"]{--partner-width:118px;--partner-height:40px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="SOKER"]{--partner-width:88px;--partner-height:46px;width:var(--partner-width);height:var(--partner-height);max-height:none}
 :is(#partner-grid,#community-partner-grid) .partner-card img[alt="AI郵報學院"]{--partner-width:134px;--partner-height:46px;width:var(--partner-width);height:var(--partner-height);max-height:none}
