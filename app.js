@@ -84,3 +84,16 @@
   });
   if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:.08});document.querySelectorAll('.heading-row,.program-grid,.challenge-grid,.survey-main,.partner-grid,.info-grid,.tickets-grid').forEach(n=>{n.classList.add('reveal-ready');observer.observe(n);});}
 })();
+
+// Native modal provides focus containment, Escape support and background inertness.
+(()=>{
+ const dialog=document.querySelector('#mobile-navigation');
+ const trigger=document.querySelector('.mobile-menu-trigger');
+ if(!dialog||!trigger)return;
+ const close=()=>dialog.close();
+ trigger.addEventListener('click',()=>{dialog.showModal();trigger.setAttribute('aria-expanded','true');document.documentElement.classList.add('mobile-navigation-open');});
+ dialog.querySelector('.mobile-menu-close').addEventListener('click',close);
+ dialog.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',close));
+ dialog.addEventListener('close',()=>{trigger.setAttribute('aria-expanded','false');document.documentElement.classList.remove('mobile-navigation-open');trigger.focus({preventScroll:true});});
+ matchMedia('(min-width:1001px)').addEventListener('change',event=>{if(event.matches&&dialog.open)close();});
+})();
