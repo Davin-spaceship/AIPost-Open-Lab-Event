@@ -305,3 +305,10 @@
 .home-revamp .mobile-navigation-heading h2{font:700 18px var(--mono);letter-spacing:0;line-height:1.5}
 @media(max-width:360px){.home-revamp{--pad:18px}.home-revamp .lineup-person{gap:6px}.home-revamp .lineup-person img{width:30px;height:30px}.home-revamp .lineup-person strong{font-size:11px}}
 .home-revamp .anchor-alias{position:absolute;width:0;height:0;pointer-events:none}
+
+/* Full published lineup: retain every original photo without cropping heads. */
+.home-revamp .lineup-person{align-items:center;gap:12px;padding:14px 0}
+.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:60px;height:72px;border-radius:5px;object-fit:contain;object-position:center;background:#e7e8e2;flex-shrink:0}
+.home-revamp .night-portraits img{object-fit:contain;object-position:center;background:#262a23}
+@media(max-width:700px){.home-revamp .lineup-person{gap:9px;padding:12px 0}.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:42px;height:54px}.home-revamp .lineup-heading h3{font-size:16px}.home-revamp .lineup-person strong{font-size:12px}.home-revamp .lineup-person small{font-size:11px}}
+@media(max-width:360px){.home-revamp .lineup-person{gap:7px}.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:36px;height:48px}.home-revamp .lineup-person strong{font-size:11px}.home-revamp .lineup-person small{font-size:10px}}
