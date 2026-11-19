@@ -323,3 +323,28 @@
 .home-revamp .lineup-person img[src*="kj-host"]{object-position:60% 20%}
 @media(max-width:700px){.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{padding:2px}}
 .home-revamp .agenda-all{display:flex;justify-content:flex-end;margin-top:14px}
+
+/* All four published awards, with development credits separated from prizes. */
+.home-revamp .challenge-compact{align-items:start}
+.home-revamp .reward-row small,.home-revamp .reward-resource small{font-size:12px;line-height:1.8;color:#aebba0}
+.home-revamp .reward-row .text-link{align-self:flex-start;font-size:12px;min-height:32px;padding:3px 0;color:var(--lime)}
+.home-revamp .award-combination{font-size:12px;color:#aebba0;line-height:1.8;margin-top:16px}
+.home-revamp .reward-resource{display:flex;flex-direction:column;gap:6px;margin-top:18px;padding:16px;background:#242b1e;border:1px solid #424a38}
+.home-revamp .reward-resource strong{font-size:13px;color:var(--lime)}
+.home-revamp .reward-resource span{font-size:13px;color:var(--paper);line-height:1.7}
+/* Keep complete awards compact rather than stretching one sidebar. */
+.home-revamp .challenge-compact{display:block}
+.home-revamp .challenge-pitch{display:grid;grid-template-columns:.8fr 1.1fr 1fr;gap:16px 28px;align-items:center}
+.home-revamp .challenge-pitch>.mono{grid-column:1/-1}
+.home-revamp .challenge-pitch h2{font-size:36px;margin:0}
+.home-revamp .challenge-pitch>p{font-size:14px}
+.home-revamp .challenge-pitch .challenge-links{margin:0;justify-content:flex-end;flex-wrap:wrap;gap:14px}
+.home-revamp .challenge-rewards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:26px;padding:0;border:0}
+.home-revamp .challenge-rewards>.mono{grid-column:1/-1}
+.home-revamp .challenge-rewards .main-reward,.home-revamp .challenge-rewards .reward-row{margin:0;padding:18px;border:1px solid #424a38;display:flex;flex-direction:column;gap:8px}
+.home-revamp .main-reward>strong{font-size:32px;margin:0}
+.home-revamp .main-reward p{font-size:12px;line-height:1.8}
+.home-revamp .award-combination{grid-column:1/-1;margin:0}
+.home-revamp .reward-resource{grid-column:1/-1;margin:0;flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:8px 20px;padding:12px 16px}
+@media(max-width:1000px){.home-revamp .challenge-pitch{grid-template-columns:1fr 1fr}.home-revamp .challenge-pitch>.mono{grid-column:1/-1}.home-revamp .challenge-pitch .challenge-links{grid-column:1/-1;justify-content:flex-start}.home-revamp .challenge-rewards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.home-revamp .challenge-pitch{display:block}.home-revamp .challenge-pitch h2{margin:14px 0}.home-revamp .challenge-pitch .challenge-links{margin-top:18px}.home-revamp .challenge-rewards{gap:10px;margin-top:24px}.home-revamp .challenge-rewards .main-reward,.home-revamp .challenge-rewards .reward-row{padding:14px;gap:7px}.home-revamp .main-reward>strong{font-size:25px}.home-revamp .main-reward>span,.home-revamp .reward-row strong{font-size:13px}.home-revamp .reward-row span{font-size:13px}.home-revamp .reward-row small{font-size:11px}.home-revamp .reward-resource{display:flex;flex-direction:column;gap:5px}.home-revamp .award-combination{font-size:11px}}
