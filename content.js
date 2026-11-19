@@ -45,10 +45,7 @@ window.OPENLAB = {
   schedule:[
     {time:'13:00',title:'報到，讓好奇心暖身',description:'出示電子票券，熟悉場地，也和身邊的 AI 同好打個招呼。'},
     {time:'13:30',title:'聽分享、看 Demo，親手玩 AI',description:'AI Talks & Demos、Playground、讀者調查與告解牆，從新觀點到動手體驗，找到你感興趣的內容。'},
-    {time:'17:30',title:'小律 GreenTed｜音樂與 AI 分享',description:'從《最佳嘻哈專輯》出發，介紹音樂製作與 AI 協作經驗。'},
-    {time:'17:40',title:'Hali｜Live Coding 聲光演出',description:'以即興編碼、電子音樂與生成式視覺，帶來 30 分鐘現場演出。'},
-    {time:'18:10',title:'AI Build Challenge 決賽與頒獎',description:'看入選團隊展示作品與操作成果，分享創作想法；最終決賽形式另行公布。'}
-    ,{time:'18:55',title:'DJ 音樂與自由交流',description:'和講者、創作者與新朋友交換想法，在音樂中延續現場的對話。'},
+    {time:'17:30 起',title:'Networking & Music Night',description:'小律的音樂與 AI 分享、Hali Live Coding 演出、作品決賽展示與頒獎，以及 DJ 音樂與自由交流；晚間節目時序、決賽形式與流程將另行公布。'},
     {time:'19:30',title:'活動結束',description:'帶著新觀點、實作靈感與新朋友，下次 OPEN LAB 見。'}
   ],
   faq:[
