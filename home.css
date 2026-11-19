@@ -312,3 +312,14 @@
 .home-revamp .night-portraits img{object-fit:contain;object-position:center;background:#262a23}
 @media(max-width:700px){.home-revamp .lineup-person{gap:9px;padding:12px 0}.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:42px;height:54px}.home-revamp .lineup-heading h3{font-size:16px}.home-revamp .lineup-person strong{font-size:12px}.home-revamp .lineup-person small{font-size:11px}}
 @media(max-width:360px){.home-revamp .lineup-person{gap:7px}.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:36px;height:48px}.home-revamp .lineup-person strong{font-size:11px}.home-revamp .lineup-person small{font-size:10px}}
+/* Compact circular portraits: inset the complete photo inside the circle. */
+.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:52px;height:52px;border-radius:50%;padding:7px;object-fit:contain;object-position:center;background:#e4e6dc}
+@media(max-width:700px){.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:40px;height:40px;padding:5.5px}}
+@media(max-width:360px){.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{width:36px;height:36px;padding:5px}}
+/* Frame each face with headroom while retaining small circular portraits. */
+.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{object-fit:cover;object-position:50% 8%;padding:3px}
+.home-revamp .lineup-person img[src*="julie-chen"]{object-position:62% 60%}
+.home-revamp .lineup-person img[src*="hali-"]{object-fit:contain;object-position:center}
+.home-revamp .lineup-person img[src*="kj-host"]{object-position:60% 20%}
+@media(max-width:700px){.home-revamp .lineup-person img,.home-revamp .lineup-person:nth-child(3) img,.home-revamp .lineup-person:nth-child(6) img{padding:2px}}
+.home-revamp .agenda-all{display:flex;justify-content:flex-end;margin-top:14px}
