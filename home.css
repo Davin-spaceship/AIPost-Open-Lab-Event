@@ -348,3 +348,9 @@
 .home-revamp .reward-resource{grid-column:1/-1;margin:0;flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:8px 20px;padding:12px 16px}
 @media(max-width:1000px){.home-revamp .challenge-pitch{grid-template-columns:1fr 1fr}.home-revamp .challenge-pitch>.mono{grid-column:1/-1}.home-revamp .challenge-pitch .challenge-links{grid-column:1/-1;justify-content:flex-start}.home-revamp .challenge-rewards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.home-revamp .challenge-pitch{display:block}.home-revamp .challenge-pitch h2{margin:14px 0}.home-revamp .challenge-pitch .challenge-links{margin-top:18px}.home-revamp .challenge-rewards{gap:10px;margin-top:24px}.home-revamp .challenge-rewards .main-reward,.home-revamp .challenge-rewards .reward-row{padding:14px;gap:7px}.home-revamp .main-reward>strong{font-size:25px}.home-revamp .main-reward>span,.home-revamp .reward-row strong{font-size:13px}.home-revamp .reward-row span{font-size:13px}.home-revamp .reward-row small{font-size:11px}.home-revamp .reward-resource{display:flex;flex-direction:column;gap:5px}.home-revamp .award-combination{font-size:11px}}
+
+/* Let partner artwork sit directly on the section; white image canvases blend away. */
+.home-revamp :is(#partner-grid,#community-partner-grid) .partner-card{background:transparent}
+.home-revamp :is(#partner-grid,#community-partner-grid) .partner-card img{mix-blend-mode:multiply}
+.home-revamp :is(#partner-grid,#community-partner-grid) .partner-card img[alt="AI郵報學院"]{mix-blend-mode:normal}
+.home-revamp #partner-grid img[alt="蛋白盒子 THE PROTEIN BOX"]{--partner-width:138px;--partner-height:54px;width:138px;height:54px}

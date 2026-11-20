@@ -35,6 +35,7 @@ window.OPENLAB = {
     {name:'Glows AI',category:'brand',role:'',description:'',logo:'logos/glows-ai.svg',url:'',published:true},
     {name:'GEORGI AI',category:'brand',role:'',description:'',logo:'logos/georgi-logotype-slate.png',url:'',published:true},
     {name:'七點創意',category:'brand',role:'',description:'',logo:'logos/seven-point.png',url:'',published:true},
+    {name:'蛋白盒子 THE PROTEIN BOX',category:'brand',role:'',description:'',logo:'logos/protein-box.png',url:'',published:true},
     {name:'Lovable Community',category:'community',role:'社群夥伴',description:'',logo:'logos/lovable-community.png',url:'',published:true},
     {name:'The AI Collective',category:'community',role:'社群夥伴',description:'',logo:'logos/the-ai-collective.png',url:'',published:true},
     {name:'Unicorns Club 獨角獸俱樂部',category:'community',role:'社群夥伴',description:'',logo:'logos/unicorns-club.webp',url:'https://unicornsclub.xyz/',published:true}],
