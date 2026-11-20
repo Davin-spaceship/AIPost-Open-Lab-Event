@@ -354,3 +354,19 @@
 .home-revamp :is(#partner-grid,#community-partner-grid) .partner-card img{mix-blend-mode:multiply}
 .home-revamp :is(#partner-grid,#community-partner-grid) .partner-card img[alt="AI郵報學院"]{mix-blend-mode:normal}
 .home-revamp #partner-grid img[alt="蛋白盒子 THE PROTEIN BOX"]{--partner-width:138px;--partner-height:54px;width:138px;height:54px}
+
+/* Balance visible artwork, including the whitespace supplied in official files. */
+.home-revamp #partner-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px 20px}
+.home-revamp #partner-grid .partner-card{height:96px;min-height:96px;padding:8px;display:flex;align-items:center;justify-content:center}
+.home-revamp #partner-grid .partner-card img[alt]{width:var(--logo-width,140px);height:auto;max-width:100%;max-height:var(--logo-height,58px);object-fit:contain}
+.home-revamp #partner-grid img[alt="NVIDIA"]{--logo-width:142px}
+.home-revamp #partner-grid img[alt="GIGABYTE"]{--logo-width:142px}
+.home-revamp #partner-grid img[alt="WAT"]{--logo-width:124px}
+.home-revamp #partner-grid img[alt="Red Bull"]{--logo-width:102px}
+.home-revamp #partner-grid img[alt="Netron 網創"]{--logo-width:150px}
+.home-revamp #partner-grid img[alt="AI郵報學院"]{--logo-width:176px;--logo-height:90px}
+.home-revamp #partner-grid img[alt="SOKER"]{--logo-width:98px;--logo-height:55px}
+.home-revamp #partner-grid img[alt="GEORGI AI"]{--logo-width:130px}
+.home-revamp #partner-grid img[alt="七點創意"]{--logo-width:156px;--logo-height:88px}
+.home-revamp #partner-grid img[alt="蛋白盒子 THE PROTEIN BOX"]{--logo-width:180px;--logo-height:70px}
+@media(max-width:700px){.home-revamp #partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 12px}.home-revamp #partner-grid .partner-card{height:82px;min-height:82px;padding:4px}.home-revamp #partner-grid .partner-card img[alt]{max-height:70px}}
