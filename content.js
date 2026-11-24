@@ -3,9 +3,9 @@
  * 不放洽談中的品牌，也不以歷來合作代表本次合作。
  */
 window.OPENLAB = {
-  event: {name:'AI郵報年會 OPEN LAB 2026 台北｜主題分享 × AI 體驗 × 社群交流',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠 F 棟',checkin:'13:00',start:'13:30',food:'17:30',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
+  event: {name:'AI郵報年會 OPEN LAB 2026 台北｜主題分享 × AI 體驗 × 社群交流',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠 F 棟',checkin:'13:00',start:'13:30',food:'17:40',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
   announcements:[
-    {label:'AGENDA',title:'OPEN LAB 2026 活動議程正式公開',description:'下午看 AI 實戰與跨領域對談，17:30 接續小律的音樂與 AI 分享、Hali 現場演出、作品決賽與 DJ 音樂交流。',href:'/agenda/'},
+    {label:'AGENDA',title:'OPEN LAB 2026 活動議程正式公開',description:'下午看 AI 實戰與跨領域對談，17:40 接續小律的音樂與 AI 分享、Hali 現場演出、作品決賽與 DJ 音樂交流。',href:'/agenda/'},
     {label:'AI PLAYGROUND',title:'輪盤抽任務，親手完成一個 AI 作品',description:'五類主題桌、志工引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'#playground'},
     {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},
     {label:'FIRST LOOK',title:'2026 AI 郵報讀者調查，活動當天首度公開',description:'由 Davin 現場剖析調查結果，分享觀點與洞察。',href:'#survey'},
@@ -45,14 +45,14 @@ window.OPENLAB = {
   schedule:[
     {time:'13:00',title:'報到，讓好奇心暖身',description:'出示電子票券，熟悉場地，也和身邊的 AI 同好打個招呼。'},
     {time:'13:30',title:'聽分享、看 Demo，親手玩 AI',description:'AI Talks & Demos、Playground、讀者調查與告解牆，從新觀點到動手體驗，找到你感興趣的內容。'},
-    {time:'17:30 起',title:'Networking & Music Night',description:'小律的音樂與 AI 分享、Hali Live Coding 演出、作品決賽展示與頒獎，以及 DJ 音樂與自由交流；晚間節目時序、決賽形式與流程將另行公布。'},
-    {time:'19:30',title:'活動結束',description:'帶著新觀點、實作靈感與新朋友，下次 OPEN LAB 見。'}
+    {time:'17:40 起',title:'Networking & Music Night',description:'小律的音樂與 AI 分享、Hali Live Coding 演出、作品決賽展示與頒獎，以及 DJ 音樂與自由交流；晚間節目時序、決賽形式與流程將另行公布。'},
+    {time:'19:40',title:'活動結束',description:'帶著新觀點、實作靈感與新朋友，下次 OPEN LAB 見。'}
   ],
   faq:[
     {question:'沒有技術背景，也可以參加嗎？',answer:'當然可以。活動歡迎對 AI 感到好奇的人。你可以聽分享、看 Demo、體驗產品，或來認識新朋友；AI 實作挑戰賽也歡迎個人或團隊免費報名，作品形式不限。'},
     {question:'一個人來，會不會尷尬？',answer:'活動安排分享、體驗與自由交流，讓共同的 AI 興趣成為話題。從一句「你也在玩這個？」開始，就有機會認識新的夥伴。'},
     {question:'要帶電腦嗎？需要每一場都參加嗎？',answer:'AI Playground 預計提供 8–12 台筆電／桌機，依時段與名額安排體驗；若想自由創作，也可以帶自己的電腦。設備與預約方式以最終公告為準。你可以自由切換分享與體驗區，不需要從頭坐到尾。'},
-    {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、自由交流、下午飲品與點心，以及17:30起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
+    {question:'票券包含哪些內容？',answer:'早鳥、一般票與晚鳥票權益相同，一票參與至活動結束，包含分享、Demo、開放體驗、自由交流、下午飲品與點心，以及17:40起餐食、酒水與非酒精飲品。餐飲依現場供應份量提供，非無限暢飲；部分體驗需排隊或登記。'},
     {question:'競賽需要另外報名嗎？',answer:'需要。AI 實作挑戰賽免費報名，請至競賽專頁登記與提交作品；購買 OPEN LAB 活動票不代表已報名競賽，競賽報名也不包含活動票。'},
     {question:'可以退票或轉讓嗎？',answer:'請依 Luma 報名頁最新票務政策辦理。報名、退票與轉讓問題可聯繫 info@aiposthub.com。'},
     {question:'場地入口和完整節目在哪裡看？',answer:'活動地點為台北瓶蓋工廠 F 棟。完整節目與講者介紹請查看官網「活動議程」。報到入口與交通指引將於活動前更新。'}
