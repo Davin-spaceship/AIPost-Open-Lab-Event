@@ -3,7 +3,7 @@ const $=id=>document.getElementById(id);
 const names={a:'影像／影片',b:'Coding & Agent',c:'Workflow & Agent',music:'和 AI 一起編曲',e:'AI 資安桌'};
 const durations={a:'15 分鐘',b:'15 分鐘',c:'15 分鐘',music:'15 分鐘',e:'15 分鐘'};
 const labels={reserved:'已預約',waiting:'候補中',checked_in:'已報到',active:'體驗中',completed:'已完成',cancelled:'已取消',no_show:'未到'};
-const params=new URLSearchParams(location.search);const verificationToken=null;history.replaceState(null,'',location.pathname+location.search);
+const params=new URLSearchParams(location.search);const verificationToken=null;if(location.hash.startsWith('#token='))history.replaceState(null,'',location.pathname+location.search);
 let slots=[],opened=false,me={authenticated:false,bookings:[]},busy=false,describedDesk="";
 const button=document.querySelector('.reserve-button');const notification=document.createElement('p');notification.role='status';notification.setAttribute('aria-live','polite');notification.className='booking-feedback';notification.hidden=true;document.querySelector('.preview-notice').remove();button.before(notification);
 const registrationDialog=$('registration-dialog');
