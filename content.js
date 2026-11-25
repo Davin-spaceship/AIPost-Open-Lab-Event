@@ -9,7 +9,7 @@ window.OPENLAB = {
     {label:'AI PLAYGROUND',title:'挑一張桌，親手完成一個 AI 作品',description:'五類主題桌、工作人員引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'/playground/'},
     {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},
     {label:'FIRST LOOK',title:'2026 AI 郵報讀者調查，活動當天首度公開',description:'由 Davin 現場剖析調查結果，分享觀點與洞察。',href:'#survey'},
-    {label:'CHALLENGE',title:'AI 實作挑戰賽，把一直想做的點子做出來',description:'OPEN LAB 獎 NT$20,000＋AI 郵報報導，另有最佳創意獎、MixRoute 特別獎與 50 組 US$50 開發額度。',href:'/challenge/'}
+    {label:'CHALLENGE',title:'AI 實作挑戰賽，把一直想做的點子做出來',description:'OPEN LAB 獎 NT$20,000＋AI 郵報報導，另有最佳創意獎、MixRoute、KDAN 與 300U Glows AI 特別獎，及 30 名 × 30U Glows AI 開發 Credit。',href:'/challenge/'}
   ],
   programs:[
     {number:'01',tag:'LISTEN',category:'share',name:'AI Talks',title:'別人，正在怎麼用 AI？',description:'邀請各行各業的 AI 專家與實踐者，聊真實案例、工作方法，以及踩過的坑。帶著你的問題來。',symbol:'↗'},
