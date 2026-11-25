@@ -6,7 +6,7 @@ window.OPENLAB = {
   event: {name:'AI郵報年會 OPEN LAB 2026 台北｜主題分享 × AI 體驗 × 社群交流',date:'2026.12.05',weekday:'SAT',city:'TAIPEI',venue:'台北瓶蓋工廠 F 棟',checkin:'13:00',start:'13:30',food:'17:40',earlyPrice:500,regularPrice:800,latePrice:1000,lateStart:'2026-11-29T00:00:00+08:00',earlyDeadline:'2026-10-31T12:00:00+08:00',earlyLabel:'10/31 中午 12:00',registration:'https://luma.com/zr1k4qa5',email:'info@aiposthub.com'},
   announcements:[
     {label:'AGENDA',title:'OPEN LAB 2026 活動議程正式公開',description:'下午看 AI 實戰與跨領域對談，17:40 接續小律的音樂與 AI 分享、Hali 現場演出、作品決賽與 DJ 音樂交流。',href:'/agenda/'},
-    {label:'AI PLAYGROUND',title:'輪盤抽任務，親手完成一個 AI 作品',description:'五類主題桌、志工引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'#playground'},
+    {label:'AI PLAYGROUND',title:'挑一張桌，親手完成一個 AI 作品',description:'五類主題桌、工作人員引導與預載工作流，帶你把好奇變成成果。體驗規劃搶先看。',href:'/playground/'},
     {label:'EARLY BIRD',title:'早鳥開放中，10/31 中午截止',description:'一票參與整場。早鳥 NT$500、一般票 NT$800、晚鳥票 NT$1,000；活動內容相同。',href:'#tickets'},
     {label:'FIRST LOOK',title:'2026 AI 郵報讀者調查，活動當天首度公開',description:'由 Davin 現場剖析調查結果，分享觀點與洞察。',href:'#survey'},
     {label:'CHALLENGE',title:'AI 實作挑戰賽，把一直想做的點子做出來',description:'OPEN LAB 獎 NT$20,000＋AI 郵報報導，另有最佳創意獎、MixRoute 特別獎與 50 組 US$50 開發額度。',href:'/challenge/'}
@@ -14,7 +14,7 @@ window.OPENLAB = {
   programs:[
     {number:'01',tag:'LISTEN',category:'share',name:'AI Talks',title:'別人，正在怎麼用 AI？',description:'邀請各行各業的 AI 專家與實踐者，聊真實案例、工作方法，以及踩過的坑。帶著你的問題來。',symbol:'↗'},
     {number:'02',tag:'WATCH',category:'try',name:'AI Demos',title:'那些「這也做得到？」的瞬間',description:'工具、Agent 工作流、影音與硬體應用，在你面前跑起來。看操作，也和團隊聊聊怎麼做到。',symbol:'▶'},
-    {number:'03',tag:'TOUCH',category:'try',name:'AI Playground',support:'Powered by NVIDIA & GIGABYTE',title:'轉一道任務，帶走一個成果。',description:'輪盤抽題，跟著任務卡在志工引導下實作。影像、Agent、Coding、音樂與資安五類主題桌，等你來試。',href:'#playground',symbol:'✳'},
+    {number:'03',tag:'TOUCH',category:'try',name:'AI Playground',support:'Powered by NVIDIA & GIGABYTE',title:'選一桌體驗，帶走一個成果。',description:'選桌體驗，跟著任務卡在工作人員引導下實作。影像、Agent、Coding、音樂與資安五類主題桌，等你來試。',href:'/playground/',symbol:'✳'},
     {number:'04',tag:'MAKE',category:'create',name:'AI Build Challenge',support:'Supported by MixRoute & Partners',title:'把你的腦洞，做成作品。',description:'有沒有用，以後再說。網站、Agent、工作流或任何 AI 實作，帶著你的想法來參賽。',href:'/challenge/',symbol:'✎'},
     {number:'05',tag:'FEEL',category:'share',name:'AI Music & Live Coding',support:'Supported by WAT & Red Bull',title:'當程式碼，變成樂器。',description:'晚間先由小律 GreenTed 分享音樂製作與 AI 協作經驗，再由 Hali 帶來 Live Coding 聲光演出。',symbol:'≋'},
     {number:'06',tag:'CONNECT',category:'meet',name:'Open Networking',support:'Supported by WAT & Red Bull',title:'讓交流繼續發生。',description:'和講者、創作者、產品團隊與其他讀者自由交流。分享正在做的事、交換想法，也認識下一位可能一起合作的夥伴。',symbol:'↔'}

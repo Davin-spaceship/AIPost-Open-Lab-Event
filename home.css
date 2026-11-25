@@ -371,6 +371,8 @@
 .home-revamp #partner-grid img[alt="蛋白盒子 THE PROTEIN BOX"]{--logo-width:180px;--logo-height:70px}
 @media(max-width:700px){.home-revamp #partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 12px}.home-revamp #partner-grid .partner-card{height:82px;min-height:82px;padding:4px}.home-revamp #partner-grid .partner-card img[alt]{max-height:70px}}
 
+.pg-sponsor-logos{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.pg-sponsor-logos span{font-size:14px}.pg-sponsor-logos img{object-fit:contain;max-width:100%}.pg-sponsor-logos img:first-of-type{width:155px;height:auto}.pg-sponsor-logos img:last-of-type{width:140px;height:auto;max-height:42px}
+
 /* Community partner optical sizing: preserve each original image and aspect ratio. */
 .home-revamp #community-partner-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px 16px}
 .home-revamp #community-partner-grid .partner-card{width:100%;height:98px;min-height:98px;padding:10px;display:flex;flex-direction:column;justify-content:center;gap:6px}
