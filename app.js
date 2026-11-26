@@ -6,7 +6,7 @@
   const validUrl=(url)=>{if(!url)return '';try{const u=new URL(url,location.href);return ['http:','https:'].includes(u.protocol)?u.href:'';}catch{return '';}};
   function renderPartners() {
     const grid=$('#partner-grid'),communityGrid=$('#community-partner-grid');grid.replaceChildren();communityGrid.replaceChildren();const items=data.partners.filter(p=>p.published);
-    items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';if(p.category==='community'&&['PB Design Lab 設計實驗室','果豪','AI懶人報'].includes(p.name)){img.className='community-avatar';n.append(img,el('span','community-label',p.name));}else n.append(img);}else n.append(el('strong','partner-name',p.name));(p.category==='community'?communityGrid:grid).append(n);});
+    items.forEach(p=>{const n=el('article','partner-card');if(p.logo){const img=el('img');img.src=p.logo;img.alt=p.name;img.loading='lazy';if(p.category==='community'&&['PB Design Lab 設計實驗室','果豪','AI懶人報','Yoshi Taipei'].includes(p.name)){img.className='community-avatar';n.append(img,el('span','community-label',p.name));}else n.append(img);}else n.append(el('strong','partner-name',p.name));(p.category==='community'?communityGrid:grid).append(n);});
 
   }
   renderPartners();
