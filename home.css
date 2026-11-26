@@ -385,3 +385,5 @@
 .home-revamp #community-partner-grid .community-avatar{--community-width:52px;--community-height:52px;mix-blend-mode:normal}
 .home-revamp #community-partner-grid .community-label{font-size:12px;line-height:1.3;text-align:center;color:var(--ink);font-weight:500}
 @media(max-width:800px){.home-revamp #community-partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.home-revamp #community-partner-grid .partner-card{height:96px;min-height:96px;padding:6px}.home-revamp #community-partner-grid .partner-card img{width:min(var(--community-width,140px),100%);height:var(--community-height,48px)}.home-revamp #community-partner-grid .community-label{font-size:12px}}
+
+.home-revamp #community-partner-grid img[alt="TaiwanNLP"]{--community-width:168px;--community-height:42px;mix-blend-mode:normal}
