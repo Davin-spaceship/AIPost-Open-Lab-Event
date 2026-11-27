@@ -388,3 +388,7 @@
 @media(max-width:800px){.home-revamp #community-partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.home-revamp #community-partner-grid .partner-card{height:96px;min-height:96px;padding:6px}.home-revamp #community-partner-grid .partner-card img{width:min(var(--community-width,140px),100%);height:var(--community-height,48px)}.home-revamp #community-partner-grid .community-label{font-size:12px}}
 
 .home-revamp #community-partner-grid img[alt="TaiwanNLP"]{--community-width:168px;--community-height:42px;mix-blend-mode:normal}
+
+/* Philo partner labels and temporary text identities. */
+.home-revamp #community-partner-grid .community-label{max-width:100%;overflow-wrap:anywhere}
+.home-revamp #community-partner-grid .partner-name{font-family:"Noto Sans TC",system-ui,sans-serif;font-size:14px;line-height:1.35;letter-spacing:0;text-align:center;max-width:100%;overflow-wrap:anywhere}
