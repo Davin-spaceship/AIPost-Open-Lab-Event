@@ -392,3 +392,6 @@
 /* Philo partner labels and temporary text identities. */
 .home-revamp #community-partner-grid .community-label{max-width:100%;overflow-wrap:anywhere}
 .home-revamp #community-partner-grid .partner-name{font-family:"Noto Sans TC",system-ui,sans-serif;font-size:14px;line-height:1.35;letter-spacing:0;text-align:center;max-width:100%;overflow-wrap:anywhere}
+
+/* IJUN original white wordmark: a dark plate preserves readability and transparency. */
+.home-revamp #community-partner-grid img[alt="奕鈞老師的數位備課室"]{--community-width:176px;--community-height:56px;padding:3px 5px;background:#111827;border-radius:6px;mix-blend-mode:normal;object-fit:contain}

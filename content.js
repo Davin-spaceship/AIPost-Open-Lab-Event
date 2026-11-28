@@ -74,7 +74,8 @@ window.OPENLAB = {
     {"name":"楊嚴昇（拾級）","category":"community","role":"社群夥伴","url":"https://yangyensheng.com/","published":true,"description":"","logo":"","display":"text","label":"楊嚴昇（拾級）"},
     {"name":"AI方舟計畫","category":"community","role":"社群夥伴","logo":"logos/ai-ark-20261128.png","url":"https://projectark.tw","published":true,"display":"logo","label":"AI方舟計畫","description":""},
     {"name":"知識倉鼠","category":"community","role":"社群夥伴","logo":"logos/knowledge-hamster-20261128.png","url":"https://circleghost.substack.com/about","published":true,"display":"logo","label":"知識倉鼠","description":""},
-    {"name":"Yuni","category":"community","role":"社群夥伴","logo":"logos/yuni-20261128.png","url":"https://portaly.cc/remotelyyuni","published":true,"display":"avatar","label":"Yuni","description":""}
+    {"name":"Yuni","category":"community","role":"社群夥伴","logo":"logos/yuni-20261128.png","url":"https://portaly.cc/remotelyyuni","published":true,"display":"avatar","label":"Yuni","description":""},
+    {"name":"奕鈞老師的數位備課室","category":"community","role":"社群夥伴","description":"","logo":"logos/ijun-ai-20261128.png","url":"https://ijun-ai.com","published":true,"display":"logo","label":"奕鈞老師的數位備課室"}
   ],
   speakers:[],
   challenges:[
